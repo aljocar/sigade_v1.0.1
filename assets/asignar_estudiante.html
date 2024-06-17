@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignar Estudiante</title> <!--===Cambiar Titulo===-->
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+    <div class="main p-3">
+        <div class="container my-3">
+            <div class="row">
+
+
+            <div class="card border-0 container-fluid text-muted" style="background-color: white;">
+                <div class="mt-4 mb-4">
+            
+                    <h2 class="title">Asignar Estudiante</h2> <!--===Cambiar Titulo===-->
+            
+                </div>
+            </div>
+
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 py-4">
+
+            <div class="card border-0 container-fluid" style="background-color: white;">
+                <div class="text-muted">
+                    <div class="card-body">
+
+                        <!--===De Aqui===-->
+
+                        
+
+
+                            <!-- Acordion -->
+
+                            <div class="accordion" id="accordionExample">
+
+                                <div class="accordion-item">
+                                  <h1 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sin_asignar" aria-expanded="true" aria-controls="sin_asignar">
+                                      <h2 class="text-muted">Sin Asignar</h2>
+                                    </button>
+                                  </h1>
+                                  <div id="sin_asignar" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                        <div class="mt-4 mb-1 panel-body p-20">
+                       
+                                            <!--======Contenido======-->
+                
+                
+                
+                                            <table class="table table-bordered">
+                                                <thead class="table-light">
+                                                  <tr>
+                                                    <th>Nombre y Apellido</th>
+                                                    <th>Cédula</th>
+                                                    <th>Año Escolar</th>
+                                                    <th>Selección</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>Juan Pérez</td>
+                                                    <td>12345678</td>
+                                                    <td>2023-2024</td>
+                                                    <td>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="estudante1">
+                                                        <label class="form-check-label" for="estudante1">
+                                                          Seleccionar
+                                                        </label>
+                                                      </div>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>María García</td>
+                                                    <td>87654321</td>
+                                                    <td>2023-2024</td>
+                                                    <td>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="estudante2">
+                                                        <label class="form-check-label" for="estudante2">
+                                                          Seleccionar
+                                                        </label>
+                                                      </div>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Pedro Rodríguez</td>
+                                                    <td>13579086</td>
+                                                    <td>2023-2024</td>
+                                                    <td>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="estudante3">
+                                                        <label class="form-check-label" for="estudante3">
+                                                          Seleccionar
+                                                        </label>
+                                                      </div>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Ana Martínez</td>
+                                                    <td>24680135</td>
+                                                    <td>2023-2024</td>
+                                                    <td>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="estudante4">
+                                                        <label class="form-check-label" for="estudante4">
+                                                          Seleccionar
+                                                        </label>
+                                                      </div>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Luis Fernández</td>
+                                                    <td>97531246</td>
+                                                    <td>2023-2024</td>
+                                                    <td>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="estudante5">
+                                                        <label class="form-check-label" for="estudante5">
+                                                          Seleccionar
+                                                        </label>
+                                                      </div>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                
+                
+                
+                                            <button type="button" class="btn btn-primary btn-light text-muted" style="background-color: #e9eaee;" data-bs-toggle="modal" data-bs-target="#asignar1">
+                                                Asignar
+                                            </button>
+                    
+                                            <!-- Modal -->
+                    
+                                            <div class="modal fade" id="asignar1" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Asignar Estudiante</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                
+                                                        <!-- Contenido -->
+                
+                                                        <div class="container my-2 row">
+                
+                                                            <div class="col-md-4">
+                                                                <label for="grado" class="form-label">Grado</label>
+                                                                <select class="form-select" id="grado">
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                </select>
+                                                            </div>
+                        
+                                                            <div class="col-md-4">
+                                                                <label for="seccion" class="form-label">Seccion</label>
+                                                                <select class="form-select" id="seccion">
+                                                                    <option value="1">A</option>
+                                                                    <option value="2">B</option>
+                                                                    <option value="3">C</option>
+                                                                    <option value="4">D</option>
+                                                                </select>
+                                                            </div>
+                
+                                                            <div class="col-md-4">
+                                                                <label for="grado" class="form-label">Año Escolar</label>
+                                                                <select class="form-select" id="grado">
+                                                                    <option value="1">2023-2024</option>
+                                                                    <option value="2">2024-2025</option>
+                                                                    <option value="3">2025-2026</option>
+                                                                    <option value="4">2026-2027</option>
+                                                                    <option value="5">2027-2028</option>
+                                                                    <option value="6">2028-2029</option>
+                                                                </select>
+                                                            </div>
+                
+                                                        </div>
+                
+                                                        <!-- Contenido -->
+                
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                        <button type="button" class="btn btn-primary">Asignar</button>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                    
+                                            <br>
+                                            <br>
+                    
+                                            <!-- Modal -->
+                                     
+                                     </div>
+                                       
+                                  </div>
+                                </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grado1" aria-expanded="false" aria-controls="grado1">
+                                      <h2 class="text-muted">Grado 1</h2>
+                                    </button>
+                                  </h2>
+                                  <div id="grado1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                        <!-- Segunda Acordion -->
+                                    
+                                        <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-1-seccionA" aria-expanded="false" aria-controls="panelsStayOpen-1-seccionA">
+                                                  <h4 class="text-muted">A</h4>
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-1-seccionA" class="accordion-collapse collapse">
+                                                  <div class="accordion-body">
+                                                  
+                                                  <!-- Listado -->
+
+                                                  <table class="table table-bordered">
+                                                    <thead class="table-light">
+                                                      <tr>
+                                                        <th>Nombre y Apellido</th>
+                                                        <th>Cédula</th>
+                                                        <th>Año Escolar</th>
+                                                        <th>Selección</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                      <tr>
+                                                        <td>Juan Pérez</td>
+                                                        <td>12345678</td>
+                                                        <td>2023-2024</td>
+                                                        <td>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="estudiante1_A_1">
+                                                            <label class="form-check-label" for="estudiante1_A_1">
+                                                              Seleccionar
+                                                            </label>
+                                                          </div>
+                                                        </td>
+                                                      </tr>
+
+                                                      <tr>
+                                                        <td>Juan Pérez</td>
+                                                        <td>12345678</td>
+                                                        <td>2023-2024</td>
+                                                        <td>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="estudiante1_A_2">
+                                                            <label class="form-check-label" for="estudiante1_A_2">
+                                                              Seleccionar
+                                                            </label>
+                                                          </div>
+                                                        </td>
+                                                      </tr>
+                                                      
+                                                    </tbody>
+                                                  </table>
+                    
+                    
+                    
+                                                <button type="button" class="btn btn-primary btn-light text-muted" style="background-color: #e9eaee;" data-bs-toggle="modal" data-bs-target="#cambiar1-A">
+                                                    Cambiar
+                                                </button>
+                        
+                                                <!-- Modal -->
+                        
+                                                <div class="modal fade" id="cambiar1-A" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Cambiar Estudiante</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                    
+                                                            <!-- Contenido -->
+                    
+                                                            <div class="container my-2 row">
+                    
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="grado" class="form-label">Grado</label>
+                                                                    <select class="form-select" id="grado">
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="5">5</option>
+                                                                        <option value="6">6</option>
+                                                                    </select>
+                                                                </div>
+                            
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="seccion" class="form-label">Seccion</label>
+                                                                    <select class="form-select" id="seccion">
+                                                                        <option value="1">A</option>
+                                                                        <option value="2">B</option>
+                                                                        <option value="3">C</option>
+                                                                        <option value="4">D</option>
+                                                                    </select>
+                                                                </div>
+                    
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="grado" class="form-label">Año Escolar</label>
+                                                                    <select class="form-select" id="grado">
+                                                                        <option value="1">2023-2024</option>
+                                                                        <option value="2">2024-2025</option>
+                                                                        <option value="3">2025-2026</option>
+                                                                        <option value="4">2026-2027</option>
+                                                                        <option value="5">2027-2028</option>
+                                                                        <option value="6">2028-2029</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="mb-3 form-check">
+                                                                  <input type="checkbox" class="form-check-input" id="exampleCheck1-1">
+                                                                  <label class="form-check-label" for="exampleCheck1-1">Estoy Seguro/a</label>
+                                                              </div>
+                    
+                                                            </div>
+                    
+                                                            <!-- Contenido -->
+                    
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                            <button type="button" class="btn btn-primary">Cambiar</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                        
+                                                <br>
+                                                <br>
+                        
+                                                <!-- Modal -->
+
+                                                  <!-- Listado -->
+                                                  
+                                                  </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-1-seccionB" aria-expanded="false" aria-controls="panelsStayOpen-1-seccionB">
+                                                <h4 class="text-muted">B</h4>
+                                                </button>
+                                              </h2>
+                                              <div id="panelsStayOpen-1-seccionB" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                
+                                                <!-- Listado -->
+
+                                                <table class="table table-bordered">
+                                                  <thead class="table-light">
+                                                    <tr>
+                                                      <th>Nombre y Apellido</th>
+                                                      <th>Cédula</th>
+                                                      <th>Año Escolar</th>
+                                                      <th>Selección</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+
+                                                    <tr>
+                                                      <td>Juan Pérez</td>
+                                                      <td>12345678</td>
+                                                      <td>2023-2024</td>
+                                                      <td>
+                                                        <div class="form-check">
+                                                          <input class="form-check-input" type="checkbox" value="" id="estudiante1_B_1">
+                                                          <label class="form-check-label" for="estudiante1_B_1">
+                                                            Seleccionar
+                                                          </label>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                      <td>Juan Pérez</td>
+                                                      <td>12345678</td>
+                                                      <td>2023-2024</td>
+                                                      <td>
+                                                        <div class="form-check">
+                                                          <input class="form-check-input" type="checkbox" value="" id="estudiante1_B_2">
+                                                          <label class="form-check-label" for="estudiante1_B_2">
+                                                            Seleccionar
+                                                          </label>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                    
+                                                  </tbody>
+                                                </table>
+                  
+                  
+                  
+                                              <button type="button" class="btn btn-primary btn-light text-muted" style="background-color: #e9eaee;" data-bs-toggle="modal" data-bs-target="#cambiar1-B">
+                                                  Cambiar
+                                              </button>
+                      
+                                              <!-- Modal -->
+                      
+                                              <div class="modal fade" id="cambiar1-B" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog modal-lg">
+                                                  <div class="modal-content">
+                                                      <div class="modal-header">
+                                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Cambiar Estudiante</h1>
+                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                      </div>
+                                                      <div class="modal-body">
+                  
+                                                          <!-- Contenido -->
+                  
+                                                          <div class="container my-2 row">
+                  
+                                                              <div class="col-md-4 mb-3">
+                                                                  <label for="grado" class="form-label">Grado</label>
+                                                                  <select class="form-select" id="grado">
+                                                                      <option value="1">1</option>
+                                                                      <option value="2">2</option>
+                                                                      <option value="3">3</option>
+                                                                      <option value="4">4</option>
+                                                                      <option value="5">5</option>
+                                                                      <option value="6">6</option>
+                                                                  </select>
+                                                              </div>
+                          
+                                                              <div class="col-md-4 mb-3">
+                                                                  <label for="seccion" class="form-label">Seccion</label>
+                                                                  <select class="form-select" id="seccion">
+                                                                      <option value="1">A</option>
+                                                                      <option value="2">B</option>
+                                                                      <option value="3">C</option>
+                                                                      <option value="4">D</option>
+                                                                  </select>
+                                                              </div>
+                  
+                                                              <div class="col-md-4 mb-3">
+                                                                  <label for="grado" class="form-label">Año Escolar</label>
+                                                                  <select class="form-select" id="grado">
+                                                                      <option value="1">2023-2024</option>
+                                                                      <option value="2">2024-2025</option>
+                                                                      <option value="3">2025-2026</option>
+                                                                      <option value="4">2026-2027</option>
+                                                                      <option value="5">2027-2028</option>
+                                                                      <option value="6">2028-2029</option>
+                                                                  </select>
+                                                              </div>
+
+                                                              <div class="mb-3 form-check">
+                                                                <input type="checkbox" class="form-check-input" id="exampleCheck1-2">
+                                                                <label class="form-check-label" for="exampleCheck1-2">Estoy Seguro/a</label>
+                                                            </div>
+                  
+                                                          </div>
+                  
+                                                          <!-- Contenido -->
+                  
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                          <button type="button" class="btn btn-primary">Cambiar</button>
+                                                      </div>
+                                                  </div>
+                                                  </div>
+                                              </div>
+                      
+                                              <br>
+                                              <br>
+                      
+                                              <!-- Modal -->
+
+                                                <!-- Listado -->
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-1-seccionC" aria-expanded="false" aria-controls="panelsStayOpen-1-seccionC">
+                                                <h4 class="text-muted">C</h4>
+                                                </button>
+                                              </h2>
+                                              <div id="panelsStayOpen-1-seccionC" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                
+                                                <!-- Listado -->
+
+                                                <table class="table table-bordered">
+                                                  <thead class="table-light">
+                                                    <tr>
+                                                      <th>Nombre y Apellido</th>
+                                                      <th>Cédula</th>
+                                                      <th>Año Escolar</th>
+                                                      <th>Selección</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+
+                                                    <tr>
+                                                      <td>Juan Pérez</td>
+                                                      <td>12345678</td>
+                                                      <td>2023-2024</td>
+                                                      <td>
+                                                        <div class="form-check">
+                                                          <input class="form-check-input" type="checkbox" value="" id="estudiante1_C_1">
+                                                          <label class="form-check-label" for="estudiante1_C_1">
+                                                            Seleccionar
+                                                          </label>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                      <td>Juan Pérez</td>
+                                                      <td>12345678</td>
+                                                      <td>2023-2024</td>
+                                                      <td>
+                                                        <div class="form-check">
+                                                          <input class="form-check-input" type="checkbox" value="" id="estudiante1_C_2">
+                                                          <label class="form-check-label" for="estudiante1_C_2">
+                                                            Seleccionar
+                                                          </label>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                    
+                                                  </tbody>
+                                                </table>
+                  
+                  
+                  
+                                              <button type="button" class="btn btn-primary btn-light text-muted" style="background-color: #e9eaee;" data-bs-toggle="modal" data-bs-target="#cambiar1-C">
+                                                  Cambiar
+                                              </button>
+                      
+                                              <!-- Modal -->
+                      
+                                              <div class="modal fade" id="cambiar1-C" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog modal-lg">
+                                                  <div class="modal-content">
+                                                      <div class="modal-header">
+                                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Cambiar Estudiante</h1>
+                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                      </div>
+                                                      <div class="modal-body">
+                  
+                                                          <!-- Contenido -->
+                  
+                                                          <div class="container my-2 row">
+                  
+                                                              <div class="col-md-4 mb-3">
+                                                                  <label for="grado" class="form-label">Grado</label>
+                                                                  <select class="form-select" id="grado">
+                                                                      <option value="1">1</option>
+                                                                      <option value="2">2</option>
+                                                                      <option value="3">3</option>
+                                                                      <option value="4">4</option>
+                                                                      <option value="5">5</option>
+                                                                      <option value="6">6</option>
+                                                                  </select>
+                                                              </div>
+                          
+                                                              <div class="col-md-4 mb-3">
+                                                                  <label for="seccion" class="form-label">Seccion</label>
+                                                                  <select class="form-select" id="seccion">
+                                                                      <option value="1">A</option>
+                                                                      <option value="2">B</option>
+                                                                      <option value="3">C</option>
+                                                                      <option value="4">D</option>
+                                                                  </select>
+                                                              </div>
+                  
+                                                              <div class="col-md-4 mb-3">
+                                                                  <label for="grado" class="form-label">Año Escolar</label>
+                                                                  <select class="form-select" id="grado">
+                                                                      <option value="1">2023-2024</option>
+                                                                      <option value="2">2024-2025</option>
+                                                                      <option value="3">2025-2026</option>
+                                                                      <option value="4">2026-2027</option>
+                                                                      <option value="5">2027-2028</option>
+                                                                      <option value="6">2028-2029</option>
+                                                                  </select>
+                                                              </div>
+
+                                                              <div class="mb-3 form-check">
+                                                                <input type="checkbox" class="form-check-input" id="exampleCheck1-3">
+                                                                <label class="form-check-label" for="exampleCheck1-3">Estoy Seguro/a</label>
+                                                            </div>
+                  
+                                                          </div>
+                  
+                                                          <!-- Contenido -->
+                  
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                          <button type="button" class="btn btn-primary">Cambiar</button>
+                                                      </div>
+                                                  </div>
+                                                  </div>
+                                              </div>
+                      
+                                              <br>
+                                              <br>
+                      
+                                              <!-- Modal -->
+
+                                                <!-- Listado -->
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-1-seccionD" aria-expanded="false" aria-controls="panelsStayOpen-1-seccionD">
+                                                  <h4 class="text-muted">D</h4>
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-1-seccionD" class="accordion-collapse collapse">
+                                                  <div class="accordion-body">
+                                                  
+                                                  <!-- Listado -->
+
+                                                  <table class="table table-bordered">
+                                                    <thead class="table-light">
+                                                      <tr>
+                                                        <th>Nombre y Apellido</th>
+                                                        <th>Cédula</th>
+                                                        <th>Año Escolar</th>
+                                                        <th>Selección</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                      <tr>
+                                                        <td>Juan Pérez</td>
+                                                        <td>12345678</td>
+                                                        <td>2023-2024</td>
+                                                        <td>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="estudiante1_D_1">
+                                                            <label class="form-check-label" for="estudiante1_D_1">
+                                                              Seleccionar
+                                                            </label>
+                                                          </div>
+                                                        </td>
+                                                      </tr>
+
+                                                      <tr>
+                                                        <td>Juan Pérez</td>
+                                                        <td>12345678</td>
+                                                        <td>2023-2024</td>
+                                                        <td>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="estudiante1_D_2">
+                                                            <label class="form-check-label" for="estudiante1_D_2">
+                                                              Seleccionar
+                                                            </label>
+                                                          </div>
+                                                        </td>
+                                                      </tr>
+                                                      
+                                                    </tbody>
+                                                  </table>
+                    
+                    
+                    
+                                                <button type="button" class="btn btn-primary btn-light text-muted" style="background-color: #e9eaee;" data-bs-toggle="modal" data-bs-target="#cambiar1-D">
+                                                    Cambiar
+                                                </button>
+                        
+                                                <!-- Modal -->
+                        
+                                                <div class="modal fade" id="cambiar1-D" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Cambiar Estudiante</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                    
+                                                            <!-- Contenido -->
+                    
+                                                            <div class="container my-2 row">
+                    
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="grado" class="form-label">Grado</label>
+                                                                    <select class="form-select" id="grado">
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="5">5</option>
+                                                                        <option value="6">6</option>
+                                                                    </select>
+                                                                </div>
+                            
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="seccion" class="form-label">Seccion</label>
+                                                                    <select class="form-select" id="seccion">
+                                                                        <option value="1">A</option>
+                                                                        <option value="2">B</option>
+                                                                        <option value="3">C</option>
+                                                                        <option value="4">D</option>
+                                                                    </select>
+                                                                </div>
+                    
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="grado" class="form-label">Año Escolar</label>
+                                                                    <select class="form-select" id="grado">
+                                                                        <option value="1">2023-2024</option>
+                                                                        <option value="2">2024-2025</option>
+                                                                        <option value="3">2025-2026</option>
+                                                                        <option value="4">2026-2027</option>
+                                                                        <option value="5">2027-2028</option>
+                                                                        <option value="6">2028-2029</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="mb-3 form-check">
+                                                                  <input type="checkbox" class="form-check-input" id="exampleCheck1-4">
+                                                                  <label class="form-check-label" for="exampleCheck1-4">Estoy Seguro/a</label>
+                                                              </div>
+                    
+                                                            </div>
+                    
+                                                            <!-- Contenido -->
+                    
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                            <button type="button" class="btn btn-primary">Cambiar</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                        
+                                                <br>
+                                                <br>
+                        
+                                                <!-- Modal -->
+
+                                                  <!-- Listado -->
+                                                  
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                        </div>
+
+                                          <!-- Segunda Acordion -->
+                                    
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grado2" aria-expanded="false" aria-controls="grado2">
+                                        <h2 class="text-muted">Grado 2</h2>
+                                    </button>
+                                  </h2>
+                                  <div id="grado2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    
+                                        <!-- Segunda Acordion -->
+
+                                        <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-2-seccionA" aria-expanded="false" aria-controls="panelsStayOpen-2-seccionA">
+                                                  <h4 class="text-muted">A</h4>
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-2-seccionA" class="accordion-collapse collapse">
+                                                  <div class="accordion-body">
+                                                  
+                                                  <!-- Listado -->
+
+                                                  <table class="table table-bordered">
+                                                    <thead class="table-light">
+                                                      <tr>
+                                                        <th>Nombre y Apellido</th>
+                                                        <th>Cédula</th>
+                                                        <th>Año Escolar</th>
+                                                        <th>Selección</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                      <tr>
+                                                        <td>Juan Pérez</td>
+                                                        <td>12345678</td>
+                                                        <td>2023-2024</td>
+                                                        <td>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="estudiante1_A_1">
+                                                            <label class="form-check-label" for="estudiante1_A_1">
+                                                              Seleccionar
+                                                            </label>
+                                                          </div>
+                                                        </td>
+                                                      </tr>
+
+                                                      <tr>
+                                                        <td>Juan Pérez</td>
+                                                        <td>12345678</td>
+                                                        <td>2023-2024</td>
+                                                        <td>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="estudiante1_A_2">
+                                                            <label class="form-check-label" for="estudiante1_A_2">
+                                                              Seleccionar
+                                                            </label>
+                                                          </div>
+                                                        </td>
+                                                      </tr>
+                                                      
+                                                    </tbody>
+                                                  </table>
+                    
+                    
+                    
+                                                <button type="button" class="btn btn-primary btn-light text-muted" style="background-color: #e9eaee;" data-bs-toggle="modal" data-bs-target="#cambiar2-A">
+                                                    Cambiar
+                                                </button>
+                        
+                                                <!-- Modal -->
+                        
+                                                <div class="modal fade" id="cambiar2-A" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Cambiar Estudiante</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                    
+                                                            <!-- Contenido -->
+                    
+                                                            <div class="container my-2 row">
+                    
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="grado" class="form-label">Grado</label>
+                                                                    <select class="form-select" id="grado">
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="5">5</option>
+                                                                        <option value="6">6</option>
+                                                                    </select>
+                                                                </div>
+                            
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="seccion" class="form-label">Seccion</label>
+                                                                    <select class="form-select" id="seccion">
+                                                                        <option value="1">A</option>
+                                                                        <option value="2">B</option>
+                                                                        <option value="3">C</option>
+                                                                        <option value="4">D</option>
+                                                                    </select>
+                                                                </div>
+                    
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="grado" class="form-label">Año Escolar</label>
+                                                                    <select class="form-select" id="grado">
+                                                                        <option value="1">2023-2024</option>
+                                                                        <option value="2">2024-2025</option>
+                                                                        <option value="3">2025-2026</option>
+                                                                        <option value="4">2026-2027</option>
+                                                                        <option value="5">2027-2028</option>
+                                                                        <option value="6">2028-2029</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="mb-3 form-check">
+                                                                  <input type="checkbox" class="form-check-input" id="exampleCheck2-1">
+                                                                  <label class="form-check-label" for="exampleCheck2-1">Estoy Seguro/a</label>
+                                                              </div>
+                    
+                                                            </div>
+                    
+                                                            <!-- Contenido -->
+                    
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                            <button type="button" class="btn btn-primary">Cambiar</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                        
+                                                <br>
+                                                <br>
+                        
+                                                <!-- Modal -->
+
+                                                  <!-- Listado -->
+                                                  
+                                                  </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-2-seccionB" aria-expanded="false" aria-controls="panelsStayOpen-2-seccionB">
+                                                <h4 class="text-muted">B</h4>
+                                                </button>
+                                              </h2>
+                                              <div id="panelsStayOpen-2-seccionB" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                
+                                                <!-- Listado -->
+
+                                                <table class="table table-bordered">
+                                                  <thead class="table-light">
+                                                    <tr>
+                                                      <th>Nombre y Apellido</th>
+                                                      <th>Cédula</th>
+                                                      <th>Año Escolar</th>
+                                                      <th>Selección</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+
+                                                    <tr>
+                                                    </tr>
+
+                                                    <tr>
+                                                    </tr>
+                                                    
+                                                  </tbody>
+                                                </table>
+                  
+                  
+                  
+                                              <button type="button" class="btn btn-primary btn-light text-muted" style="background-color: #e9eaee;" data-bs-toggle="modal" data-bs-target="#cambiar2-B">
+                                                  Cambiar
+                                              </button>
+                      
+                                              <!-- Modal -->
+                      
+                                              <div class="modal fade" id="cambiar2-B" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog modal-lg">
+                                                  <div class="modal-content">
+                                                      <div class="modal-header">
+                                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Cambiar Estudiante</h1>
+                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                      </div>
+                                                      <div class="modal-body">
+                  
+                                                          <!-- Contenido -->
+                  
+                                                          <div class="container my-2 row">
+                  
+                                                              <div class="col-md-4 mb-3">
+                                                                  <label for="grado" class="form-label">Grado</label>
+                                                                  <select class="form-select" id="grado">
+                                                                      <option value="1">1</option>
+                                                                      <option value="2">2</option>
+                                                                      <option value="3">3</option>
+                                                                      <option value="4">4</option>
+                                                                      <option value="5">5</option>
+                                                                      <option value="6">6</option>
+                                                                  </select>
+                                                              </div>
+                          
+                                                              <div class="col-md-4 mb-3">
+                                                                  <label for="seccion" class="form-label">Seccion</label>
+                                                                  <select class="form-select" id="seccion">
+                                                                      <option value="1">A</option>
+                                                                      <option value="2">B</option>
+                                                                      <option value="3">C</option>
+                                                                      <option value="4">D</option>
+                                                                  </select>
+                                                              </div>
+                  
+                                                              <div class="col-md-4 mb-3">
+                                                                  <label for="grado" class="form-label">Año Escolar</label>
+                                                                  <select class="form-select" id="grado">
+                                                                      <option value="1">2023-2024</option>
+                                                                      <option value="2">2024-2025</option>
+                                                                      <option value="3">2025-2026</option>
+                                                                      <option value="4">2026-2027</option>
+                                                                      <option value="5">2027-2028</option>
+                                                                      <option value="6">2028-2029</option>
+                                                                  </select>
+                                                              </div>
+
+                                                              <div class="mb-3 form-check">
+                                                                <input type="checkbox" class="form-check-input" id="exampleCheck2-2">
+                                                                <label class="form-check-label" for="exampleCheck2-2">Estoy Seguro/a</label>
+                                                            </div>
+                  
+                                                          </div>
+                  
+                                                          <!-- Contenido -->
+                  
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                          <button type="button" class="btn btn-primary">Cambiar</button>
+                                                      </div>
+                                                  </div>
+                                                  </div>
+                                              </div>
+                      
+                                              <br>
+                                              <br>
+                      
+                                              <!-- Modal -->
+
+                                                <!-- Listado -->
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-2-seccionC" aria-expanded="false" aria-controls="panelsStayOpen-2-seccionC">
+                                                <h4 class="text-muted">C</h4>
+                                                </button>
+                                              </h2>
+                                              <div id="panelsStayOpen-2-seccionC" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                
+                                                <!-- Listado -->
+
+                                                <table class="table table-bordered">
+                                                  <thead class="table-light">
+                                                    <tr>
+                                                      <th>Nombre y Apellido</th>
+                                                      <th>Cédula</th>
+                                                      <th>Año Escolar</th>
+                                                      <th>Selección</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+
+                                                    <tr>
+                                                    </tr>
+
+                                                    <tr>
+                                                    </tr>
+                                                    
+                                                  </tbody>
+                                                </table>
+                  
+                  
+                  
+                                              <button type="button" class="btn btn-primary btn-light text-muted" style="background-color: #e9eaee;" data-bs-toggle="modal" data-bs-target="#cambiar2-C">
+                                                  Cambiar
+                                              </button>
+                      
+                                              <!-- Modal -->
+                      
+                                              <div class="modal fade" id="cambiar2-C" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog modal-lg">
+                                                  <div class="modal-content">
+                                                      <div class="modal-header">
+                                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Cambiar Estudiante</h1>
+                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                      </div>
+                                                      <div class="modal-body">
+                  
+                                                          <!-- Contenido -->
+                  
+                                                          <div class="container my-2 row">
+                  
+                                                              <div class="col-md-4 mb-3">
+                                                                  <label for="grado" class="form-label">Grado</label>
+                                                                  <select class="form-select" id="grado">
+                                                                      <option value="1">1</option>
+                                                                      <option value="2">2</option>
+                                                                      <option value="3">3</option>
+                                                                      <option value="4">4</option>
+                                                                      <option value="5">5</option>
+                                                                      <option value="6">6</option>
+                                                                  </select>
+                                                              </div>
+                          
+                                                              <div class="col-md-4 mb-3">
+                                                                  <label for="seccion" class="form-label">Seccion</label>
+                                                                  <select class="form-select" id="seccion">
+                                                                      <option value="1">A</option>
+                                                                      <option value="2">B</option>
+                                                                      <option value="3">C</option>
+                                                                      <option value="4">D</option>
+                                                                  </select>
+                                                              </div>
+                  
+                                                              <div class="col-md-4 mb-3">
+                                                                  <label for="grado" class="form-label">Año Escolar</label>
+                                                                  <select class="form-select" id="grado">
+                                                                      <option value="1">2023-2024</option>
+                                                                      <option value="2">2024-2025</option>
+                                                                      <option value="3">2025-2026</option>
+                                                                      <option value="4">2026-2027</option>
+                                                                      <option value="5">2027-2028</option>
+                                                                      <option value="6">2028-2029</option>
+                                                                  </select>
+                                                              </div>
+
+                                                              <div class="mb-3 form-check">
+                                                                <input type="checkbox" class="form-check-input" id="exampleCheck2-3">
+                                                                <label class="form-check-label" for="exampleCheck2-3">Estoy Seguro/a</label>
+                                                            </div>
+                  
+                                                          </div>
+                  
+                                                          <!-- Contenido -->
+                  
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                          <button type="button" class="btn btn-primary">Cambiar</button>
+                                                      </div>
+                                                  </div>
+                                                  </div>
+                                              </div>
+                      
+                                              <br>
+                                              <br>
+                      
+                                              <!-- Modal -->
+
+                                                <!-- Listado -->
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-2-seccionD" aria-expanded="false" aria-controls="panelsStayOpen-2-seccionD">
+                                                  <h4 class="text-muted">D</h4>
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-2-seccionD" class="accordion-collapse collapse">
+                                                  <div class="accordion-body">
+                                                  
+                                                  <!-- Listado -->
+
+                                                  <table class="table table-bordered">
+                                                    <thead class="table-light">
+                                                      <tr>
+                                                        <th>Nombre y Apellido</th>
+                                                        <th>Cédula</th>
+                                                        <th>Año Escolar</th>
+                                                        <th>Selección</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+  
+                                                      <tr>
+                                                      </tr>
+  
+                                                      <tr>
+                                                      </tr>
+                                                      
+                                                    </tbody>
+                                                  </table>
+                    
+                    
+                    
+                                                <button type="button" class="btn btn-primary btn-light text-muted" style="background-color: #e9eaee;" data-bs-toggle="modal" data-bs-target="#cambiar2-D">
+                                                    Cambiar
+                                                </button>
+                        
+                                                <!-- Modal -->
+                        
+                                                <div class="modal fade" id="cambiar2-D" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Cambiar Estudiante</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                    
+                                                            <!-- Contenido -->
+                    
+                                                            <div class="container my-2 row">
+                    
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="grado" class="form-label">Grado</label>
+                                                                    <select class="form-select" id="grado">
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="5">5</option>
+                                                                        <option value="6">6</option>
+                                                                    </select>
+                                                                </div>
+                            
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="seccion" class="form-label">Seccion</label>
+                                                                    <select class="form-select" id="seccion">
+                                                                        <option value="1">A</option>
+                                                                        <option value="2">B</option>
+                                                                        <option value="3">C</option>
+                                                                        <option value="4">D</option>
+                                                                    </select>
+                                                                </div>
+                    
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="grado" class="form-label">Año Escolar</label>
+                                                                    <select class="form-select" id="grado">
+                                                                        <option value="1">2023-2024</option>
+                                                                        <option value="2">2024-2025</option>
+                                                                        <option value="3">2025-2026</option>
+                                                                        <option value="4">2026-2027</option>
+                                                                        <option value="5">2027-2028</option>
+                                                                        <option value="6">2028-2029</option>
+                                                                    </select>
+                                                                </div>
+  
+                                                                <div class="mb-3 form-check">
+                                                                  <input type="checkbox" class="form-check-input" id="exampleCheck2-4">
+                                                                  <label class="form-check-label" for="exampleCheck2-4">Estoy Seguro/a</label>
+                                                              </div>
+                    
+                                                            </div>
+                    
+                                                            <!-- Contenido -->
+                    
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                            <button type="button" class="btn btn-primary">Cambiar</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                        
+                                                <br>
+                                                <br>
+                        
+                                                <!-- Modal -->
+
+                                                  <!-- Listado -->
+                                                  
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                        </div>
+
+                                        <!-- Segunda Acordion -->
+                                    
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grado3" aria-expanded="false" aria-controls="grado3">
+                                          <h2 class="text-muted">Grado 3</h2>
+                                      </button>
+                                    </h2>
+                                    <div id="grado3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                      
+                                        <!-- Segunda Acordion -->
+
+                                        <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-3-seccionA" aria-expanded="false" aria-controls="panelsStayOpen-3-seccionA">
+                                                  <h4 class="text-muted">A</h4>
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-3-seccionA" class="accordion-collapse collapse">
+                                                  <div class="accordion-body">
+                                                  
+                                                  <!-- Listado -->
+                                                  <!-- Listado -->
+                                                  
+                                                  </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-3-seccionB" aria-expanded="false" aria-controls="panelsStayOpen-3-seccionB">
+                                                <h4 class="text-muted">B</h4>
+                                                </button>
+                                              </h2>
+                                              <div id="panelsStayOpen-3-seccionB" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                
+                                                <!-- Listado -->
+                                                <!-- Listado -->
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-3-seccionC" aria-expanded="false" aria-controls="panelsStayOpen-3-seccionC">
+                                                <h4 class="text-muted">C</h4>
+                                                </button>
+                                              </h2>
+                                              <div id="panelsStayOpen-3-seccionC" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                
+                                                <!-- Listado -->
+                                                <!-- Listado -->
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-3-seccionD" aria-expanded="false" aria-controls="panelsStayOpen-3-seccionD">
+                                                  <h4 class="text-muted">D</h4>
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-3-seccionD" class="accordion-collapse collapse">
+                                                  <div class="accordion-body">
+                                                  
+                                                  <!-- Listado -->
+                                                  <!-- Listado -->
+                                                  
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                        </div>
+
+                                        <!-- Segunda Acordion -->
+                                      
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grado4" aria-expanded="false" aria-controls="grado4">
+                                          <h2 class="text-muted">Grado 4</h2>
+                                      </button>
+                                    </h2>
+                                    <div id="grado4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                      
+                                        <!-- Segunda Acordion -->
+
+                                        <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-4-seccionA" aria-expanded="false" aria-controls="panelsStayOpen-4-seccionA">
+                                                  <h4 class="text-muted">A</h4>
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-4-seccionA" class="accordion-collapse collapse">
+                                                  <div class="accordion-body">
+                                                  
+                                                  <!-- Listado -->
+                                                  <!-- Listado -->
+                                                  
+                                                  </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-4-seccionB" aria-expanded="false" aria-controls="panelsStayOpen-4-seccionB">
+                                                <h4 class="text-muted">B</h4>
+                                                </button>
+                                              </h2>
+                                              <div id="panelsStayOpen-4-seccionB" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                
+                                                <!-- Listado -->
+                                                <!-- Listado -->
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-4-seccionC" aria-expanded="false" aria-controls="panelsStayOpen-4-seccionC">
+                                                <h4 class="text-muted">C</h4>
+                                                </button>
+                                              </h2>
+                                              <div id="panelsStayOpen-4-seccionC" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                
+                                                <!-- Listado -->
+                                                <!-- Listado -->
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-4-seccionD" aria-expanded="false" aria-controls="panelsStayOpen-4-seccionD">
+                                                  <h4 class="text-muted">D</h4>
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-4-seccionD" class="accordion-collapse collapse">
+                                                  <div class="accordion-body">
+                                                  
+                                                  <!-- Listado -->
+                                                  <!-- Listado -->
+                                                  
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                        </div>
+
+                                        <!-- Segunda Acordion -->
+                                      
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grado5" aria-expanded="false" aria-controls="grado5">
+                                          <h2 class="text-muted">Grado 5</h2>
+                                      </button>
+                                    </h2>
+                                    <div id="grado5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                      
+                                        <!-- Segunda Acordion -->
+
+                                        <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-5-seccionA" aria-expanded="false" aria-controls="panelsStayOpen-5-seccionA">
+                                                  <h4 class="text-muted">A</h4>
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-5-seccionA" class="accordion-collapse collapse">
+                                                  <div class="accordion-body">
+                                                  
+                                                  <!-- Listado -->
+                                                  <!-- Listado -->
+                                                  
+                                                  </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-5-seccionB" aria-expanded="false" aria-controls="panelsStayOpen-5-seccionB">
+                                                <h4 class="text-muted">B</h4>
+                                                </button>
+                                              </h2>
+                                              <div id="panelsStayOpen-5-seccionB" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                
+                                                <!-- Listado -->
+                                                <!-- Listado -->
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-5-seccionC" aria-expanded="false" aria-controls="panelsStayOpen-5-seccionC">
+                                                <h4 class="text-muted">C</h4>
+                                                </button>
+                                              </h2>
+                                              <div id="panelsStayOpen-5-seccionC" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                
+                                                <!-- Listado -->
+                                                <!-- Listado -->
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-5-seccionD" aria-expanded="false" aria-controls="panelsStayOpen-5-seccionD">
+                                                  <h4 class="text-muted">D</h4>
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-5-seccionD" class="accordion-collapse collapse">
+                                                  <div class="accordion-body">
+                                                  
+                                                  <!-- Listado -->
+                                                  <!-- Listado -->
+                                                  
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                        </div>
+
+                                        <!-- Segunda Acordion -->
+                                      
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grado6" aria-expanded="false" aria-controls="grado6">
+                                          <h2 class="text-muted">Grado 6</h2>
+                                      </button>
+                                    </h2>
+                                    <div id="grado6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                      
+                                        <!-- Segunda Acordion -->
+
+                                        <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-6-seccionA" aria-expanded="false" aria-controls="panelsStayOpen-6-seccionA">
+                                                  <h4 class="text-muted">A</h4>
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-6-seccionA" class="accordion-collapse collapse">
+                                                  <div class="accordion-body">
+                                                  
+                                                  <!-- Listado -->
+                                                  <!-- Listado -->
+                                                  
+                                                  </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-6-seccionB" aria-expanded="false" aria-controls="panelsStayOpen-6-seccionB">
+                                                <h4 class="text-muted">B</h4>
+                                                </button>
+                                              </h2>
+                                              <div id="panelsStayOpen-6-seccionB" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                
+                                                <!-- Listado -->
+                                                <!-- Listado -->
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-6-seccionC" aria-expanded="false" aria-controls="panelsStayOpen-6-seccionC">
+                                                <h4 class="text-muted">C</h4>
+                                                </button>
+                                              </h2>
+                                              <div id="panelsStayOpen-6-seccionC" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                
+                                                <!-- Listado -->
+                                                <!-- Listado -->
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-6-seccionD" aria-expanded="false" aria-controls="panelsStayOpen-6-seccionD">
+                                                  <h4 class="text-muted">D</h4>
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-6-seccionD" class="accordion-collapse collapse">
+                                                  <div class="accordion-body">
+                                                  
+                                                  <!-- Listado -->
+                                                  <!-- Listado -->
+                                                  
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                        </div>
+
+                                        <!-- Segunda Acordion -->
+                                      
+                                      </div>
+                                    </div>
+                                </div>
+
+                              </div>
+
+                            <!-- Acordion -->
+                            
+
+                            <!--===Hasta Aqui===-->
+        
+                            <!--======Contenido======-->
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <!--===============-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="scriptmodal.js"></script>
+
+</body>
+</html>

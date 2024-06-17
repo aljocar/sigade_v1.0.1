@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Estudiante</title>
+
+        <link rel="stylesheet" href="./assets/css/estilo.css" />
+
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/custom.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet"/>
+
+        <style>
+
+            body {
+                background-color: #e9eaee;
+            }
+    
+        </style>
+
+    </head>
+    <body>
+
+    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="wihte">
+        <div class="container-fluid">
+            
+            <a href="#" class="navbar-brand" id="item_menu_inicio">Escuela</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html" style="color: rgba(255, 0, 0, 0.5);">
+                    <i class="lni lni-exit"></i>
+                    <span>Cerrar Sesión</span>
+                </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>        
+      
+      
+  <div class="container my-3">
+  <div class="row">
+
+    <div class="card border-0 container-fluid" style="background-color: white;">
+        <div class="text-muted ">
+            <div class="card-body">
+                <div class="">
+                     <h3>Estudiante</h3> <!--Titulo-->
+                </div>
+                <div class="mt-4 mb-1 panel-body p-20">
+
+                    <!--======Contenido======-->
+
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 py-4 bg-white">
+                        <h4>Datos</h4>
+                        <table class="table table-bordered table-striped">
+                          
+                            <thead class="thead-dark">
+                                <tr>
+                         
+                                    
+                                    <th class="centrado">Nombre</th>
+                                    
+                                    <th class="centrado">Año Escolar</th>
+                                    
+                                    <th class="centrado">Grado</th>
+                                    <th class="centrado">Sección</th>
+                                    
+                                    
+                                    <th class="centrado">Docente</th>
+                                    <th class="centrado">Usuario</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="centrado">Jimy Diaz</td>
+                                    <td class="centrado">2023-2024</td>
+                                    <td class="centrado">2do</td>
+                                    <td class="centrado">A</td>
+                                    
+                                    <td class="centrado">Maria Magdalena</td>
+                                    <td class="centrado">23312512</td>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </tr>
+                                
+                            </tbody>
+    
+                        </table>
+                        <button type="button" class="btn btn-primary btn-light text-muted" style="background-color: #e9eaee; float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Cambiar contraseña
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Cambiar Contraseña</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                          <label for="exampleInputEmail1" class="form-label">Contraseña Actual</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                          
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="exampleInputPassword1" class="form-label">Contraseña Nueva</label>
+                                          <input type="password" class="form-control" id="exampleInputPassword1">
+                                          <div id="emailHelp" class="form-text"></div>
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                          <label class="form-check-label" for="exampleCheck1">Estoy Seguro/a</label>
+                                        </div>
+                                      </form>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Guardar</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+    
+                            
+
+  
+  
+                     
+                        
+                
+          
+            
+            
+                        <h4>Planilla de inscripción</h4>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                         
+                                    
+                                    <th class="centrado">Planilla de inscripción</th>
+                                    
+                                    
+                                    
+                                    <th class="centrado">
+                                        <button type="button" class="btn btn-primary">
+                                        <img src="./assets/icon/eye.svg" alt="Ícono de vista">
+                                        </button>
+                                    </th>
+                                    
+                                    
+                                    
+                                    <th class="centrado"><button type="button" class="btn btn-danger">
+      <img src="./assets/icon/download.svg" alt="Ícono de descarga">
+    </button></th>
+                                    
+                                    
+                                </tr>
+                            </thead>
+                         
+                        </table>
+                    <br>
+                     
+     
+              
+            
+            
+            
+                        <h4>Informe Pedagógico</h4>
+                        <table class="table  table-bordered table-striped">
+                            <thead>
+                                <tr>
+                         
+                                    
+                                    <th class="centrado">Nombre</th>
+                                    
+                                    
+                                    
+                                    <th class="centrado">Fecha</th>
+                                    <th class="centrado">Ver</th>
+                                    
+                                    
+                                    <th class="centrado">Des</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="centrado">Informepedagogic-I.pdf</td>
+                                    <td class="centrado">15/12/2023</td>
+                                    <td class="centrado"><button type="button" class="btn btn-primary">
+      <img src="./assets/icon/eye.svg" alt="Ícono de descarga">
+    </button></td>
+                                    
+                                    <td class="centrado"><button type="button" class="btn btn-danger">
+      <img src="./assets/icon/download.svg" alt="Ícono de descarga">
+    </button></td>
+                                                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </tr>
+                                
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td class="centrado">Informepedagogico-II.pdf</td>
+                                    <td class="centrado">8/03/2024</td>
+                                    <td class="centrado"><button type="button" class="btn btn-primary">
+      <img src="./assets/icon/eye.svg" alt="Ícono de descarga">
+    </button></td>
+                                    
+                                    <td class="centrado"><button type="button" class="btn btn-danger">
+      <img src="./assets/icon/download.svg" alt="Ícono de descarga">
+    </button></td>
+                                                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </tr>
+                                
+                            </tbody>
+    <tbody>
+                                <tr>
+                                    <td class="centrado">Informepedagogic-III.pdf</td>
+                                    <td class="centrado">4/06/2024</td>
+                                    <td class="centrado"><button type="button" class="btn btn-primary">
+      <img src="./assets/icon/eye.svg" alt="Ícono de descarga">
+    </button></td>
+                                    
+                                    <td class="centrado"><button type="button" class="btn btn-danger">
+      <img src="./assets/icon/download.svg" alt="Ícono de descarga">
+    </button></td>
+                                                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </tr>
+                                
+                            </tbody>
+                            
+                        </table>
+                    </div>
+
+                    <!--======Contenido======-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+                
+                 </div>
+ </div>
+            
+        
+        
+        
+        
+        <!-- Bootstrap -->
+        <script src="bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/menu.js"></script>
+    </body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario Admistrador</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+</head>
+<body>
+    
+
+    
+    
+        <div class="main p-3">
+          <div class="container my-8">
+            <main id="container_contenido">
+                <!--==========Contenido===========-->
+
+                <div class="card border-0 container-fluid" style="background-color: white;">
+                    <div class="mt-4 mb-4">
+                        <div class="page-title-div">
+                            <div class="col-sxs-6">
+                                <h2 class="title text-muted">Usuario Administrador</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                <div class="container my-3">
+                    <div class="card col-12 p-4 bg-white border-0">
+                        <h4 class="text-muted">Administrador</h4>
+                        <form>
+
+                            <!--===De Aqui===-->
+
+                            <section class="section py-1">
+                                <div class="card border-0 container-fluid" style="background-color: white;">
+                                    <div class="">
+                                        <div class="">
+                                            <div class="text-muted ">
+                                                <div class="card-body">
+                                                    <div class="">
+                                                        
+                                                        <a class="btn btn-primary abrir-modal" href="#" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                            <i class="lni lni-circle-plus"></i>
+                                                            Crear
+                                                        </a>
+                                                        <!--Modal-->
+                                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Crear Administrador</h1>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="boton_editar modal-body">
+                                                                    
+                                                                    
+                                                                        <form>
+                                                
+                                                                            <div class="mb-3 py-3">
+                                                                                <label for="nombre" class="form-label">Nombre de Usuario</label>
+                                                                                <input type="text" class="form-control" id="nombre" placeholder="Ej. Antonio Piña" autofocus>
+                                                                            </div>
+                                                                            <div class="mb-3 py-3">
+                                                                                <label for="Seccion" class="form-label">Contraseña</label>
+                                                                                <input type="text" class="form-control" id="Seccion" placeholder="Ej. 31246.jm" autofocus>
+                                                                            </div>
+                                                                        </form>
+        
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                                <button type="button" class="btn btn-primary">Crear</button>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="mt-4 mb-1 panel-body p-20">
+                                                        <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>#</th>
+                                                                    <th>Nombre de Usuario</th>
+                                                                    <th>Contraseña</th>
+                                                                    <th>Acción</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>(Nombre de Usuario)</td>
+                                                                    <td>***********</td>
+                                                                    <td>
+        
+                                                                        
+                                                                        <a class="btn btn-primary abrir-modal" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editGrado">
+                                                                            <i class="lni lni-pencil-alt"></i>
+                                                                        </a>
+                                                                        
+                                                                            <!--Modal-->
+                                                                        <div class="modal fade text-muted" id="editGrado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                <div class="modal-dialog">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar Información de Usuario</h1>
+                                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                    </div>
+                                                                                    <div class="boton_editar modal-body">
+                                                                                        
+                                                                                        
+                                                                                            <form>
+                                                                    
+                                                                                                <div class="mb-3 py-3">
+                                                                                                    <label for="nombre" class="form-label">Usuario</label>
+                                                                                                    <input type="text" class="form-control" id="nombre" placeholder="Ej. Armando Lopez" autofocus>
+                                                                                                </div>
+                                                                                                <div class="mb-3 py-3">
+                                                                                                    <label for="Seccion" class="form-label">Contraseña</label>
+                                                                                                    <input type="text" class="form-control" id="Seccion" placeholder="Ej. 1523ghbf24" autofocus>
+                                                                                                </div>
+                                                                                            </form>
+                            
+                                                                                    </div>
+                                                                                    <div class="modal-footer">
+                                                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                                                    <button type="button" class="btn btn-primary">Guardar</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                </div>
+                                                                        </div>
+
+                                                                            
+                                                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#elimAdmin" title="Borrar Administrador">
+                                                                            <i class="lni lni-eraser"></i>
+                                                                        </a>
+                                                                           
+                                                                            <!-- Modal -->
+                                                                        <div class="modal fade text-muted" id="elimAdmin" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true">
+                                                                            <div class="modal-dialog">
+                                                                            <div class="modal-content">
+                            
+                                                                                <div class="modal-header">
+                                                                                <h5 class="modal-title" id="modalReprobar">Confirmar Eliminar</h5>
+                                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                </div>
+                            
+                                                                                <div class="modal-body">
+                                                                                <p><strong>¿Estás seguro de que desea eliminar este Administrador?</strong></p>
+                                                                                <div class="mb-3">
+                                                                                    <label for="password" class="form-label"><strong>Contraseña de confirmación</strong></label>
+                                                                                    <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                                                                                </div>
+                                                                                <div class="mb-3 form-check">
+                                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                                                    <label class="form-check-label" for="exampleCheck2"><strong>Estoy Seguro/a</strong></label>
+                                                                                </div>
+                                                                                </div>
+                            
+                                                                                <div class="modal-footer">
+                                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                                                <button type="button" class="btn btn-danger">Eliminar</button>
+                                                                                </div>
+                            
+                                                                            </div>
+                                                                            </div>
+                                                                        </div>
+  
+                                              <!-- Modal Final -->
+
+
+                                                                    </td>
+                                                                </tr>
+                                                                
+                                                                
+        
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!--===Hasta Aqui===-->
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>  
+                        
+
+                    </div>
+                </div>
+            </div>            
+
+                <!--==========Contenido===========-->
+            </main>
+          </div>
+        </div>
+      </div>
+
+
+    <!--===============-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/menu.js"></script>
+    
+</body>
+</html>

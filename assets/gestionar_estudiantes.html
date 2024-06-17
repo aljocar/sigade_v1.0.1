@@ -1,0 +1,2071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar Estudiantes</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="web-font-files/lineicons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet"/>
+
+    <style>
+
+        body {
+            background-color: #e9eaee;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+
+    <div class="container my-3">
+        <div class="row">
+
+            <div class="card border-0 container-fluid text-muted" style="background-color: white;">
+                <div class="mt-4 mb-4">
+                    <div class="page-title-div">
+                        <div class="col-sxs-6">
+                            <h2 class="title">Gestionar Estudiantes</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 py-4">
+      
+                <div class="card border-0 container-fluid" style="background-color: white;">
+                    <div class="text-muted ">
+                        <div class="card-body">
+                            <div class="">
+                                <h3>Listado de Estudiantes</h3> <!--Titulo-->
+                            </div>
+                            <div class="mt-4 mb-1 panel-body p-20">
+            
+                                <!--======Contenido======-->
+            
+                                
+
+                                <table class="table-bordered table-striped table">
+                                    <thead class="thead-black">
+                                        <tr>
+                                            <th class="center">#</th>
+                                            <th class="center">Nombre del Estudiante</th>
+                                            <th class="center">Cédula</th>
+                                            <th class="center">Grado</th>
+                                            <th class="center">Sección</th>
+                                            <th class="center">Docente</th>
+                                            <th class="center">Acción</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="center">1</th>
+                                            <th class="center">Jose Melendez</th>
+                                            <th class="center">24835680</th>
+                                            <th class="center">1</th>
+                                            <th class="center">A</th>
+                                            <th class="center">Pancho Melendez</th>
+                                            <th class="center">
+                                            <button class="btn btn-primary" role="button" data-bs-toggle="modal" data-bs-target="#editEstudiante">
+                                                <i class="lni lni-pencil-alt"></i>
+                                            </button>
+                                                <!--Modal-->
+
+                                                <div class="modal fade text-muted" id="editEstudiante" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar Información del Estudiante</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="boton_editar modal-body">
+                                                            
+                                                            
+                                                            <div class="py-4 bg-white text-muted">
+                                <div class="py-3">
+                                                       
+                                <label for="apellido" class="form-label text-secondary"><strong>Apellidos</strong></label>
+     
+                                <input class="form-control" type="text" id="apellido" autofocus>
+                                </div>
+                    
+                                <div class="py-3">
+                                  <label for="nombre" class="form-label text-secondary"><strong>Nombre</strong></label>
+
+ <input class="form-control" type="text" id="nombre" autofocus>
+                                </div>
+                    
+                    
+<div class="py-3">
+    <label for="ci" class="form-label text-secondary"><strong>C.I</strong></label>
+    <input class="form-control" type="text" id="ci" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+
+<div class="py-3">
+    <label for="nacionalidad" class="form-label text-secondary"><strong>Nacionalidad</strong></label>
+    <input class="form-control" type="text" id="nacionalidad" autofocus>
+</div>
+
+
+<div class="py-3"><strong class="text-secondary">Sexo</strong></div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="generoh" value="option1">
+                                        <label class="form-check-label" for="generoh">Hombre</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="generom" value="option2">
+                                        <label class="form-check-label" for="generom">Mujer</label>
+                                      </div>
+                                      
+                                      
+                                      
+                                  <div class="py-3">
+                                    <label for="fecha" class="form-label text-secondary"><strong>Fecha de Nacimiento</strong></label>
+                                    <input class="form-control" type="text" id="fecha" placeholder="dd/mm/aaaa">
+                                </div> 
+                                
+                                
+                                <div class="py-3">
+                                <label for="lugarN" class="form-label text-secondary"><strong>Lugar de nacimiento</strong></label>
+     
+                                <input class="form-control" type="text" id="lugarN" autofocus>
+                                </div>
+                                <div class="py-3">
+
+                                <label for="estado" class="form-label text-secondary"><strong>Estado</strong></label>
+
+     
+                                <input class="form-control" type="text" id="estado" autofocus>
+                                </div>
+                                 
+                                 <div class="py-3">
+
+                                <label for="pais" class="form-label text-secondary"><strong>País</strong></label>
+
+     
+                                <input class="form-control" type="text" id="pais" autofocus>
+                                </div>     <div class="py-3">
+
+                                <label for="direccion" class="form-label text-secondary"><strong>Dirección actual</strong></label>
+
+     
+                                <input class="form-control" type="text" id="direccion" autofocus>
+                                </div>  
+                                
+                                 <div class="py-3">
+
+
+
+                                <label for="municipio" class="form-label text-secondary"><strong>Municipio</strong></label>
+
+     
+                                <input class="form-control" type="text" id="municipio" autofocus>
+                                </div> 
+                                
+                                <div class="py-3">
+
+    <label for="telefono" class="form-label text-secondary"><strong>Número de teléfono</strong></label>
+
+    <input class="form-control" type="text" id="telefono" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+                                      
+                                      
+                                    </div>
+                    
+                    
+                                <div class="py-3">
+                                    <label for="representante" class="form-label text-secondary"><strong>Con quién vive</strong></label>
+                                            <select class="form-select" id="representante" rows="3" placeholder="Nombre del Videojuego">
+                                               <option>Ambos padres</option>
+                                               <option>Madre</option>
+                                               <option>Padre</option>
+                                               <option>Otros parientes</option>
+
+                            </select>
+                                </div>
+<br>
+                        <form>
+                                <h2 class="text-muted">Datos del Representante</h2>
+                        
+                    
+                    
+                    <div class="py-4 bg-white text-muted">
+
+                                <div class="py-3">
+
+                                                       
+                                <label for="apellidoR" class="form-label text-secondary"><strong>Apellidos</strong></label>
+     
+                                <input class="form-control" type="text" id="apellidoR" autofocus>
+                                </div>
+                               
+                    
+                            </div>
+                            
+                            <div class="py-3">
+
+                                <label for="nombreR" class="form-label text-secondary"><strong>Nombre</strong></label>
+     
+                                <input class="form-control" type="text" id="nombreR" autofocus>
+                                </div>
+                                
+                              <div class="py-3">
+
+
+
+                                <label for="parentesco" class="form-label text-secondary"><strong>Parentesco</strong></label>
+     
+                                <input class="form-control" type="text" id="parentesco" autofocus>
+                                </div>  
+                                
+                                
+                                
+                                <div class="py-3">
+
+    <label for="ciR" class="form-label text-secondary"><strong>C.I</strong></label>
+
+    <input class="form-control" type="text" id="ciR" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+
+
+
+<div class="py-3"><strong class="text-secondary">Sexo</strong></div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="generohR" value="option1">
+                                        <label class="form-check-label" for="generohR">Hombre</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="generomR" value="option2">
+                                        <label class="form-check-label" for="generomR">Mujer</label>
+                                      </div>
+                                      
+                                      <div class="py-3">
+
+
+                                <label for="direccionR" class="form-label text-secondary"><strong>Dirección de habitación</strong></label>
+     
+                                <input class="form-control" type="text" id="direccionR" autofocus>
+                                </div>  
+                               <div class="py-3">
+
+
+
+    <label for="telefonoR" class="form-label text-secondary"><strong>Número de teléfono</strong></label>
+
+    <input class="form-control" type="text" id="telefonoR" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+                    <div class="py-3">
+                                <label for="profesión" class="form-label text-secondary"><strong>Profesión</strong></label>
+     
+                                <input class="form-control" type="text" id="profesión" autofocus>
+                                </div>
+                                
+                                <div class="py-3"><strong class="text-secondary">¿Trabaja?</strong></div>
+
+
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="workS" value="option1">
+                                        <label class="form-check-label" for="workS">Si</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="workN" value="option2">
+                                        <label class="form-check-label" for="workN">No</label>
+                                      </div>
+                                      
+                                      <div class="py-3">
+
+
+
+
+                                <label for="oficio" class="form-label text-secondary"><strong>Oficio</strong></label>
+     
+                                <input class="form-control" type="text" id="oficio" autofocus>
+                                </div>  
+                                
+                                 
+                                
+                                <div class="py-3">
+
+
+
+                                <label for="lugarW" class="form-label text-secondary"><strong>Lugar de trabajo</strong></label>
+     
+                                <input class="form-control" type="text" id="lugarW" autofocus>
+                                </div> 
+                                
+                                <div class="py-3">
+
+
+
+                                <label for="direccionW" class="form-label text-secondary"><strong>Dirección</strong></label>
+     
+                                <input class="form-control" type="text" id="direccionW" autofocus>
+                                </div> 
+                                <br>
+
+                        <form>
+
+                                <h2 class="text-muted">Usuario</h2>
+                                
+                                <div class="py-4 bg-white text-muted">
+
+                                <div class="py-3">
+                                <label for="usuario" class="form-label text-secondary"><strong>Nombre de Usuario</strong></label>
+     
+                                <input class="form-control" type="text" id="usuario" autofocus>
+                                </div>
+                    
+                               <div class="py-3">
+    <label for="contrasena" class="form-label text-secondary"><strong>Contraseña</strong></label>
+    <input class="form-control" type="password" id="contrasena" placeholder="" autofocus>
+</div>
+
+<div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Estoy Seguro/a</label>
+  </div>
+
+                            </div>
+
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                        <button type="button" class="btn btn-primary">Guardar</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+                                                <button type="button" class="btn btn-danger" title="Borrar Estudiante" data-bs-toggle="modal" data-bs-target="#elimEstudiante">
+                                                    <i class="lni lni-eraser"></i>
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade text-muted" id="elimEstudiante" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true" style="text-align: left;">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+    
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="elimEstudiante">Confirmar Eliminar</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+    
+                                                        <div class="modal-body">
+                                                        <p><strong>¿Estás seguro de que desea eliminar este Estudiante?</strong></p>
+                                                        <div class="mb-3">
+                                                            <label for="password" class="form-label"><strong>Contraseña de confirmación</strong></label>
+                                                            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                                                        </div>
+                                                        <div class="mb-3 form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                            <label class="form-check-label" for="exampleCheck2"><strong>Estoy Seguro/a</strong></label>
+                                                        </div>
+                                                        </div>
+    
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                                        </div>
+    
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Modal Final -->
+                                                
+                                                
+                                            
+                                            
+                                            </th>
+                                        </tr>
+                        
+                                        <tr>
+                                            <th class="center">2</th>
+                                            <th class="center">Cintia Flores</th>
+                                            <th class="center">13053579</th>
+                                            <th class="center">3</th>
+                                            <th class="center">B</th>
+                                            <th class="center">Elvie Flores</th>
+                                            <th class="center">
+
+                                                <a class="btn btn-primary abrir-modal" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editEstudiante">
+                                                    <i class="lni lni-pencil-alt"></i>
+                                                </a>
+                                            
+                                                <!--Modal-->
+                                                <div class="modal fade text-muted" id="editEstudiante" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar Información del Estudiante</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        
+                                                        <div class="boton_editar modal-body">
+                                                            
+                                                            
+                                                            <div class="py-4 bg-white text-muted">
+                                <div class="py-3">
+                                                       
+                                <label for="apellido" class="form-label text-secondary"><strong>Apellidos</strong></label>
+     
+                                <input class="form-control" type="text" id="apellido" autofocus>
+                                </div>
+                    
+                                <div class="py-3">
+                                  <label for="nombre" class="form-label text-secondary"><strong>Nombre</strong></label>
+
+ <input class="form-control" type="text" id="nombre" autofocus>
+                                </div>
+                    
+                    
+<div class="py-3">
+    <label for="ci" class="form-label text-secondary"><strong>C.I</strong></label>
+    <input class="form-control" type="text" id="ci" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+
+<div class="py-3">
+    <label for="nacionalidad" class="form-label text-secondary"><strong>Nacionalidad</strong></label>
+    <input class="form-control" type="text" id="nacionalidad" autofocus>
+</div>
+
+
+<div class="py-3"><strong class="text-secondary">Sexo</strong></div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="generoh" value="option1">
+                                        <label class="form-check-label" for="generoh">Hombre</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="generom" value="option2">
+                                        <label class="form-check-label" for="generom">Mujer</label>
+                                      </div>
+                                      
+                                      
+                                      
+                                  <div class="py-3">
+                                    <label for="fecha" class="form-label text-secondary"><strong>Fecha de Nacimiento</strong></label>
+                                    <input class="form-control" type="text" id="fecha" placeholder="dd/mm/aaaa">
+                                </div> 
+                                
+                                
+                                <div class="py-3">
+                                <label for="lugarN" class="form-label text-secondary"><strong>Lugar de nacimiento</strong></label>
+     
+                                <input class="form-control" type="text" id="lugarN" autofocus>
+                                </div>
+                                <div class="py-3">
+
+                                <label for="estado" class="form-label text-secondary"><strong>Estado</strong></label>
+
+     
+                                <input class="form-control" type="text" id="estado" autofocus>
+                                </div>
+                                 
+                                 <div class="py-3">
+
+                                <label for="pais" class="form-label text-secondary"><strong>País</strong></label>
+
+     
+                                <input class="form-control" type="text" id="pais" autofocus>
+                                </div>     <div class="py-3">
+
+                                <label for="direccion" class="form-label text-secondary"><strong>Dirección actual</strong></label>
+
+     
+                                <input class="form-control" type="text" id="direccion" autofocus>
+                                </div>  
+                                
+                                 <div class="py-3">
+
+
+
+                                <label for="municipio" class="form-label text-secondary"><strong>Municipio</strong></label>
+
+     
+                                <input class="form-control" type="text" id="municipio" autofocus>
+                                </div> 
+                                
+                                <div class="py-3">
+
+    <label for="telefono" class="form-label text-secondary"><strong>Número de teléfono</strong></label>
+
+    <input class="form-control" type="text" id="telefono" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+                                      
+                                      
+                                    </div>
+                    
+                    
+                                <div class="py-3">
+                                    <label for="representante" class="form-label text-secondary"><strong>Con quién vive</strong></label>
+                                            <select class="form-select" id="representante" rows="3" placeholder="Nombre del Videojuego">
+                                               <option>Ambos padres</option>
+                                               <option>Madre</option>
+                                               <option>Padre</option>
+                                               <option>Otros parientes</option>
+
+                            </select>
+                                </div>
+<br>
+                        <form>
+                                <h2 class="text-muted">Datos del Representante</h2>
+                        
+                    
+                    
+                    <div class="py-4 bg-white text-muted">
+
+                                <div class="py-3">
+
+                                                       
+                                <label for="apellidoR" class="form-label text-secondary"><strong>Apellidos</strong></label>
+     
+                                <input class="form-control" type="text" id="apellidoR" autofocus>
+                                </div>
+                               
+                    
+                            </div>
+                            
+                            <div class="py-3">
+
+                                <label for="nombreR" class="form-label text-secondary"><strong>Nombre</strong></label>
+     
+                                <input class="form-control" type="text" id="nombreR" autofocus>
+                                </div>
+                                
+                              <div class="py-3">
+
+
+
+                                <label for="parentesco" class="form-label text-secondary"><strong>Parentesco</strong></label>
+     
+                                <input class="form-control" type="text" id="parentesco" autofocus>
+                                </div>  
+                                
+                                
+                                
+                                <div class="py-3">
+
+    <label for="ciR" class="form-label text-secondary"><strong>C.I</strong></label>
+
+    <input class="form-control" type="text" id="ciR" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+
+
+
+<div class="py-3"><strong class="text-secondary">Sexo</strong></div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="generohR" value="option1">
+                                        <label class="form-check-label" for="generohR">Hombre</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="generomR" value="option2">
+                                        <label class="form-check-label" for="generomR">Mujer</label>
+                                      </div>
+                                      
+                                      <div class="py-3">
+
+
+                                <label for="direccionR" class="form-label text-secondary"><strong>Dirección de habitación</strong></label>
+     
+                                <input class="form-control" type="text" id="direccionR" autofocus>
+                                </div>  
+                               <div class="py-3">
+
+
+
+    <label for="telefonoR" class="form-label text-secondary"><strong>Número de teléfono</strong></label>
+
+    <input class="form-control" type="text" id="telefonoR" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+                    <div class="py-3">
+                                <label for="profesión" class="form-label text-secondary"><strong>Profesión</strong></label>
+     
+                                <input class="form-control" type="text" id="profesión" autofocus>
+                                </div>
+                                
+                                <div class="py-3"><strong class="text-secondary">¿Trabaja?</strong></div>
+
+
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="workS" value="option1">
+                                        <label class="form-check-label" for="workS">Si</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="workN" value="option2">
+                                        <label class="form-check-label" for="workN">No</label>
+                                      </div>
+                                      
+                                      <div class="py-3">
+
+
+
+
+                                <label for="oficio" class="form-label text-secondary"><strong>Oficio</strong></label>
+     
+                                <input class="form-control" type="text" id="oficio" autofocus>
+                                </div>  
+                                
+                                 
+                                
+                                <div class="py-3">
+
+
+
+                                <label for="lugarW" class="form-label text-secondary"><strong>Lugar de trabajo</strong></label>
+     
+                                <input class="form-control" type="text" id="lugarW" autofocus>
+                                </div> 
+                                
+                                <div class="py-3">
+
+
+
+                                <label for="direccionW" class="form-label text-secondary"><strong>Dirección</strong></label>
+     
+                                <input class="form-control" type="text" id="direccionW" autofocus>
+                                </div> 
+                                <br>
+
+                        <form>
+
+                                <h2 class="text-muted">Usuario</h2>
+                                
+                                <div class="py-4 bg-white text-muted">
+
+                                <div class="py-3">
+                                <label for="usuario" class="form-label text-secondary"><strong>Nombre de Usuario</strong></label>
+     
+                                <input class="form-control" type="text" id="usuario" autofocus>
+                                </div>
+                    
+                               <div class="py-3">
+    <label for="contrasena" class="form-label text-secondary"><strong>Contraseña</strong></label>
+    <input class="form-control" type="password" id="contrasena" placeholder="" autofocus>
+</div>
+
+<div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Estoy Seguro/a</label>
+  </div>
+
+                            </div>
+
+
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                        <button type="button" class="btn btn-primary">Guardar</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+
+                                                
+    
+                                                    <button type="button" class="btn btn-danger" title="Borrar Sección" data-bs-toggle="modal" data-bs-target="#elimEstudiante">
+                                                        <i class="lni lni-eraser"></i>
+                                                    </button>
+    
+                                                    <!-- Modal -->
+                                                    <div class="modal fade text-muted" id="elimEstudiante" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true" style="text-align: left;">
+                                                        <div class="modal-dialog">
+                                                        <div class="modal-content">
+        
+                                                            <div class="modal-header">
+                                                            <h5 class="modal-title" id="elimEstudiante">Confirmar Eliminar</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+        
+                                                            <div class="modal-body">
+                                                            <p><strong>¿Estás seguro de que desea eliminar este Estudiante?</strong></p>
+                                                            <div class="mb-3">
+                                                                <label for="password" class="form-label"><strong>Contraseña de confirmación</strong></label>
+                                                                <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                                                            </div>
+                                                            <div class="mb-3 form-check">
+                                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                                <label class="form-check-label" for="exampleCheck2"><strong>Estoy Seguro/a</strong></label>
+                                                            </div>
+                                                            </div>
+        
+                                                            <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                            <button type="button" class="btn btn-danger">Eliminar</button>
+                                                            </div>
+        
+                                                        </div>
+                                                        </div>
+                                                    </div>
+    
+                                                    <!-- Modal Final -->
+                                                    
+                                                    
+                                                
+                                                
+                                            </th>
+                                        </tr>
+                        
+                                        <tr>
+                                            <th class="center">3</th>
+                                            <th class="center">Mauricio Herrera</th>
+                                            <th class="center">12345678</th>
+                                            <th class="center">3</th>
+                                            <th class="center">C</th>
+                                            <th class="center">Ana Herrera</th>
+                                            <th class="center">
+
+                                                <a class="btn btn-primary abrir-modal" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editEstudiante">
+                                                    <i class="lni lni-pencil-alt"></i>
+                                                </a>
+                                            
+                                                <!--Modal-->
+                                                <div class="modal fade text-muted" id="editEstudiante" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar Información del Estudiante</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        
+                                                        <div class="boton_editar modal-body">
+                                                            
+                                                            
+                                                            <div class="py-4 bg-white text-muted">
+                                <div class="py-3">
+                                                       
+                                <label for="apellido" class="form-label text-secondary"><strong>Apellidos</strong></label>
+     
+                                <input class="form-control" type="text" id="apellido" autofocus>
+                                </div>
+                    
+                                <div class="py-3">
+                                  <label for="nombre" class="form-label text-secondary"><strong>Nombre</strong></label>
+
+ <input class="form-control" type="text" id="nombre" autofocus>
+                                </div>
+                    
+                    
+<div class="py-3">
+    <label for="ci" class="form-label text-secondary"><strong>C.I</strong></label>
+    <input class="form-control" type="text" id="ci" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+
+<div class="py-3">
+    <label for="nacionalidad" class="form-label text-secondary"><strong>Nacionalidad</strong></label>
+    <input class="form-control" type="text" id="nacionalidad" autofocus>
+</div>
+
+
+<div class="py-3"><strong class="text-secondary">Sexo</strong></div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="generoh" value="option1">
+                                        <label class="form-check-label" for="generoh">Hombre</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="generom" value="option2">
+                                        <label class="form-check-label" for="generom">Mujer</label>
+                                      </div>
+                                      
+                                      
+                                      
+                                  <div class="py-3">
+                                    <label for="fecha" class="form-label text-secondary"><strong>Fecha de Nacimiento</strong></label>
+                                    <input class="form-control" type="text" id="fecha" placeholder="dd/mm/aaaa">
+                                </div> 
+                                
+                                
+                                <div class="py-3">
+                                <label for="lugarN" class="form-label text-secondary"><strong>Lugar de nacimiento</strong></label>
+     
+                                <input class="form-control" type="text" id="lugarN" autofocus>
+                                </div>
+                                <div class="py-3">
+
+                                <label for="estado" class="form-label text-secondary"><strong>Estado</strong></label>
+
+     
+                                <input class="form-control" type="text" id="estado" autofocus>
+                                </div>
+                                 
+                                 <div class="py-3">
+
+                                <label for="pais" class="form-label text-secondary"><strong>País</strong></label>
+
+     
+                                <input class="form-control" type="text" id="pais" autofocus>
+                                </div>     <div class="py-3">
+
+                                <label for="direccion" class="form-label text-secondary"><strong>Dirección actual</strong></label>
+
+     
+                                <input class="form-control" type="text" id="direccion" autofocus>
+                                </div>  
+                                
+                                 <div class="py-3">
+
+
+
+                                <label for="municipio" class="form-label text-secondary"><strong>Municipio</strong></label>
+
+     
+                                <input class="form-control" type="text" id="municipio" autofocus>
+                                </div> 
+                                
+                                <div class="py-3">
+
+    <label for="telefono" class="form-label text-secondary"><strong>Número de teléfono</strong></label>
+
+    <input class="form-control" type="text" id="telefono" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+                                      
+                                      
+                                    </div>
+                    
+                    
+                                <div class="py-3">
+                                    <label for="representante" class="form-label text-secondary"><strong>Con quién vive</strong></label>
+                                            <select class="form-select" id="representante" rows="3" placeholder="Nombre del Videojuego">
+                                               <option>Ambos padres</option>
+                                               <option>Madre</option>
+                                               <option>Padre</option>
+                                               <option>Otros parientes</option>
+
+                            </select>
+                                </div>
+<br>
+                        <form>
+                                <h2 class="text-muted">Datos del Representante</h2>
+                        
+                    
+                    
+                    <div class="py-4 bg-white text-muted">
+
+                                <div class="py-3">
+
+                                                       
+                                <label for="apellidoR" class="form-label text-secondary"><strong>Apellidos</strong></label>
+     
+                                <input class="form-control" type="text" id="apellidoR" autofocus>
+                                </div>
+                               
+                    
+                            </div>
+                            
+                            <div class="py-3">
+
+                                <label for="nombreR" class="form-label text-secondary"><strong>Nombre</strong></label>
+     
+                                <input class="form-control" type="text" id="nombreR" autofocus>
+                                </div>
+                                
+                              <div class="py-3">
+
+
+
+                                <label for="parentesco" class="form-label text-secondary"><strong>Parentesco</strong></label>
+     
+                                <input class="form-control" type="text" id="parentesco" autofocus>
+                                </div>  
+                                
+                                
+                                
+                                <div class="py-3">
+
+    <label for="ciR" class="form-label text-secondary"><strong>C.I</strong></label>
+
+    <input class="form-control" type="text" id="ciR" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+
+
+
+<div class="py-3"><strong class="text-secondary">Sexo</strong></div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="generohR" value="option1">
+                                        <label class="form-check-label" for="generohR">Hombre</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="generomR" value="option2">
+                                        <label class="form-check-label" for="generomR">Mujer</label>
+                                      </div>
+                                      
+                                      <div class="py-3">
+
+
+                                <label for="direccionR" class="form-label text-secondary"><strong>Dirección de habitación</strong></label>
+     
+                                <input class="form-control" type="text" id="direccionR" autofocus>
+                                </div>  
+                               <div class="py-3">
+
+
+
+    <label for="telefonoR" class="form-label text-secondary"><strong>Número de teléfono</strong></label>
+
+    <input class="form-control" type="text" id="telefonoR" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+                    <div class="py-3">
+                                <label for="profesión" class="form-label text-secondary"><strong>Profesión</strong></label>
+     
+                                <input class="form-control" type="text" id="profesión" autofocus>
+                                </div>
+                                
+                                <div class="py-3"><strong class="text-secondary">¿Trabaja?</strong></div>
+
+
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="workS" value="option1">
+                                        <label class="form-check-label" for="workS">Si</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="workN" value="option2">
+                                        <label class="form-check-label" for="workN">No</label>
+                                      </div>
+                                      
+                                      <div class="py-3">
+
+
+
+
+                                <label for="oficio" class="form-label text-secondary"><strong>Oficio</strong></label>
+     
+                                <input class="form-control" type="text" id="oficio" autofocus>
+                                </div>  
+                                
+                                 
+                                
+                                <div class="py-3">
+
+
+
+                                <label for="lugarW" class="form-label text-secondary"><strong>Lugar de trabajo</strong></label>
+     
+                                <input class="form-control" type="text" id="lugarW" autofocus>
+                                </div> 
+                                
+                                <div class="py-3">
+
+
+
+                                <label for="direccionW" class="form-label text-secondary"><strong>Dirección</strong></label>
+     
+                                <input class="form-control" type="text" id="direccionW" autofocus>
+                                </div> 
+                                <br>
+
+                        <form>
+
+                                <h2 class="text-muted">Usuario</h2>
+                                
+                                <div class="py-4 bg-white text-muted">
+
+                                <div class="py-3">
+                                <label for="usuario" class="form-label text-secondary"><strong>Nombre de Usuario</strong></label>
+     
+                                <input class="form-control" type="text" id="usuario" autofocus>
+                                </div>
+                    
+                               <div class="py-3">
+    <label for="contrasena" class="form-label text-secondary"><strong>Contraseña</strong></label>
+    <input class="form-control" type="password" id="contrasena" placeholder="" autofocus>
+</div>
+
+<div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Estoy Seguro/a</label>
+  </div>
+
+                            </div>
+
+
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                        <button type="button" class="btn btn-primary">Guardar</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+
+                                                
+    
+                                                    <button type="button" class="btn btn-danger" title="Borrar Sección" data-bs-toggle="modal" data-bs-target="#elimEstudiante">
+                                                        <i class="lni lni-eraser"></i>
+                                                    </button>
+    
+                                                    <!-- Modal -->
+                                                    <div class="modal fade text-muted" id="elimEstudiante" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true" style="text-align: left;">
+                                                        <div class="modal-dialog">
+                                                        <div class="modal-content">
+        
+                                                            <div class="modal-header">
+                                                            <h5 class="modal-title" id="elimEstudiante">Confirmar Eliminar</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+        
+                                                            <div class="modal-body">
+                                                            <p><strong>¿Estás seguro de que desea eliminar este Estudiante?</strong></p>
+                                                            <div class="mb-3">
+                                                                <label for="password" class="form-label"><strong>Contraseña de confirmación</strong></label>
+                                                                <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                                                            </div>
+                                                            <div class="mb-3 form-check">
+                                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                                <label class="form-check-label" for="exampleCheck2"><strong>Estoy Seguro/a</strong></label>
+                                                            </div>
+                                                            </div>
+        
+                                                            <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                            <button type="button" class="btn btn-danger">Eliminar</button>
+                                                            </div>
+        
+                                                        </div>
+                                                        </div>
+                                                    </div>
+    
+                                                    <!-- Modal Final -->
+                                                    
+                                                    
+                                                
+                                                
+                                            </th>
+                                        </tr>
+                        
+                                        <tr>
+                                            <th class="center">4</th>
+                                            <th class="center">Mauricio Suarez</th>
+                                            <th class="center">11583091</th>
+                                            <th class="center">1</th>
+                                            <th class="center">D</th>
+                                            <th class="center">Luis Suarez</th>
+                                            <th class="center">
+
+                                                <a class="btn btn-primary abrir-modal" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editEstudiante">
+                                                    <i class="lni lni-pencil-alt"></i>
+                                                </a>
+                                            
+                                                <!--Modal-->
+                                                <div class="modal fade text-muted" id="editEstudiante" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar Información del Estudiante</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        
+                                                        <div class="boton_editar modal-body">
+                                                            
+                                                            
+                                                            <div class="py-4 bg-white text-muted">
+                                <div class="py-3">
+                                                       
+                                <label for="apellido" class="form-label text-secondary"><strong>Apellidos</strong></label>
+     
+                                <input class="form-control" type="text" id="apellido" autofocus>
+                                </div>
+                    
+                                <div class="py-3">
+                                  <label for="nombre" class="form-label text-secondary"><strong>Nombre</strong></label>
+
+ <input class="form-control" type="text" id="nombre" autofocus>
+                                </div>
+                    
+                    
+<div class="py-3">
+    <label for="ci" class="form-label text-secondary"><strong>C.I</strong></label>
+    <input class="form-control" type="text" id="ci" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+
+<div class="py-3">
+    <label for="nacionalidad" class="form-label text-secondary"><strong>Nacionalidad</strong></label>
+    <input class="form-control" type="text" id="nacionalidad" autofocus>
+</div>
+
+
+<div class="py-3"><strong class="text-secondary">Sexo</strong></div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="generoh" value="option1">
+                                        <label class="form-check-label" for="generoh">Hombre</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="generom" value="option2">
+                                        <label class="form-check-label" for="generom">Mujer</label>
+                                      </div>
+                                      
+                                      
+                                      
+                                  <div class="py-3">
+                                    <label for="fecha" class="form-label text-secondary"><strong>Fecha de Nacimiento</strong></label>
+                                    <input class="form-control" type="text" id="fecha" placeholder="dd/mm/aaaa">
+                                </div> 
+                                
+                                
+                                <div class="py-3">
+                                <label for="lugarN" class="form-label text-secondary"><strong>Lugar de nacimiento</strong></label>
+     
+                                <input class="form-control" type="text" id="lugarN" autofocus>
+                                </div>
+                                <div class="py-3">
+
+                                <label for="estado" class="form-label text-secondary"><strong>Estado</strong></label>
+
+     
+                                <input class="form-control" type="text" id="estado" autofocus>
+                                </div>
+                                 
+                                 <div class="py-3">
+
+                                <label for="pais" class="form-label text-secondary"><strong>País</strong></label>
+
+     
+                                <input class="form-control" type="text" id="pais" autofocus>
+                                </div>     <div class="py-3">
+
+                                <label for="direccion" class="form-label text-secondary"><strong>Dirección actual</strong></label>
+
+     
+                                <input class="form-control" type="text" id="direccion" autofocus>
+                                </div>  
+                                
+                                 <div class="py-3">
+
+
+
+                                <label for="municipio" class="form-label text-secondary"><strong>Municipio</strong></label>
+
+     
+                                <input class="form-control" type="text" id="municipio" autofocus>
+                                </div> 
+                                
+                                <div class="py-3">
+
+    <label for="telefono" class="form-label text-secondary"><strong>Número de teléfono</strong></label>
+
+    <input class="form-control" type="text" id="telefono" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+                                      
+                                      
+                                    </div>
+                    
+                    
+                                <div class="py-3">
+                                    <label for="representante" class="form-label text-secondary"><strong>Con quién vive</strong></label>
+                                            <select class="form-select" id="representante" rows="3" placeholder="Nombre del Videojuego">
+                                               <option>Ambos padres</option>
+                                               <option>Madre</option>
+                                               <option>Padre</option>
+                                               <option>Otros parientes</option>
+
+                            </select>
+                                </div>
+<br>
+                        <form>
+                                <h2 class="text-muted">Datos del Representante</h2>
+                        
+                    
+                    
+                    <div class="py-4 bg-white text-muted">
+
+                                <div class="py-3">
+
+                                                       
+                                <label for="apellidoR" class="form-label text-secondary"><strong>Apellidos</strong></label>
+     
+                                <input class="form-control" type="text" id="apellidoR" autofocus>
+                                </div>
+                               
+                    
+                            </div>
+                            
+                            <div class="py-3">
+
+                                <label for="nombreR" class="form-label text-secondary"><strong>Nombre</strong></label>
+     
+                                <input class="form-control" type="text" id="nombreR" autofocus>
+                                </div>
+                                
+                              <div class="py-3">
+
+
+
+                                <label for="parentesco" class="form-label text-secondary"><strong>Parentesco</strong></label>
+     
+                                <input class="form-control" type="text" id="parentesco" autofocus>
+                                </div>  
+                                
+                                
+                                
+                                <div class="py-3">
+
+    <label for="ciR" class="form-label text-secondary"><strong>C.I</strong></label>
+
+    <input class="form-control" type="text" id="ciR" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+
+
+
+<div class="py-3"><strong class="text-secondary">Sexo</strong></div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="generohR" value="option1">
+                                        <label class="form-check-label" for="generohR">Hombre</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="generomR" value="option2">
+                                        <label class="form-check-label" for="generomR">Mujer</label>
+                                      </div>
+                                      
+                                      <div class="py-3">
+
+
+                                <label for="direccionR" class="form-label text-secondary"><strong>Dirección de habitación</strong></label>
+     
+                                <input class="form-control" type="text" id="direccionR" autofocus>
+                                </div>  
+                               <div class="py-3">
+
+
+
+    <label for="telefonoR" class="form-label text-secondary"><strong>Número de teléfono</strong></label>
+
+    <input class="form-control" type="text" id="telefonoR" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+                    <div class="py-3">
+                                <label for="profesión" class="form-label text-secondary"><strong>Profesión</strong></label>
+     
+                                <input class="form-control" type="text" id="profesión" autofocus>
+                                </div>
+                                
+                                <div class="py-3"><strong class="text-secondary">¿Trabaja?</strong></div>
+
+
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="workS" value="option1">
+                                        <label class="form-check-label" for="workS">Si</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="workN" value="option2">
+                                        <label class="form-check-label" for="workN">No</label>
+                                      </div>
+                                      
+                                      <div class="py-3">
+
+
+
+
+                                <label for="oficio" class="form-label text-secondary"><strong>Oficio</strong></label>
+     
+                                <input class="form-control" type="text" id="oficio" autofocus>
+                                </div>  
+                                
+                                 
+                                
+                                <div class="py-3">
+
+
+
+                                <label for="lugarW" class="form-label text-secondary"><strong>Lugar de trabajo</strong></label>
+     
+                                <input class="form-control" type="text" id="lugarW" autofocus>
+                                </div> 
+                                
+                                <div class="py-3">
+
+
+
+                                <label for="direccionW" class="form-label text-secondary"><strong>Dirección</strong></label>
+     
+                                <input class="form-control" type="text" id="direccionW" autofocus>
+                                </div> 
+                                <br>
+
+                        <form>
+
+                                <h2 class="text-muted">Usuario</h2>
+                                
+                                <div class="py-4 bg-white text-muted">
+
+                                <div class="py-3">
+                                <label for="usuario" class="form-label text-secondary"><strong>Nombre de Usuario</strong></label>
+     
+                                <input class="form-control" type="text" id="usuario" autofocus>
+                                </div>
+                    
+                               <div class="py-3">
+    <label for="contrasena" class="form-label text-secondary"><strong>Contraseña</strong></label>
+    <input class="form-control" type="password" id="contrasena" placeholder="" autofocus>
+</div>
+
+<div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Estoy Seguro/a</label>
+  </div>
+
+                            </div>
+
+
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                        <button type="button" class="btn btn-primary">Guardar</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+
+                                                
+    
+                                                    <button type="button" class="btn btn-danger" title="Borrar Sección" data-bs-toggle="modal" data-bs-target="#elimEstudiante">
+                                                        <i class="lni lni-eraser"></i>
+                                                    </button>
+    
+                                                    <!-- Modal -->
+                                                    <div class="modal fade text-muted" id="elimEstudiante" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true" style="text-align: left;">
+                                                        <div class="modal-dialog">
+                                                        <div class="modal-content">
+        
+                                                            <div class="modal-header">
+                                                            <h5 class="modal-title" id="elimEstudiante">Confirmar Eliminar</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+        
+                                                            <div class="modal-body">
+                                                            <p><strong>¿Estás seguro de que desea eliminar este Estudiante?</strong></p>
+                                                            <div class="mb-3">
+                                                                <label for="password" class="form-label"><strong>Contraseña de confirmación</strong></label>
+                                                                <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                                                            </div>
+                                                            <div class="mb-3 form-check">
+                                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                                <label class="form-check-label" for="exampleCheck2"><strong>Estoy Seguro/a</strong></label>
+                                                            </div>
+                                                            </div>
+        
+                                                            <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                            <button type="button" class="btn btn-danger">Eliminar</button>
+                                                            </div>
+        
+                                                        </div>
+                                                        </div>
+                                                    </div>
+    
+                                                    <!-- Modal Final -->
+                                                    
+                                                    
+                                                
+                                                
+                                            </th>
+                                        </tr>
+                        
+                                        <tr>
+                                            <th class="center">5</th>
+                                            <th class="center">Víctor Benitez</th>
+                                            <th class="center">34637042</th>
+                                            <th class="center">2</th>
+                                            <th class="center">A</th>
+                                            <th class="center">Gregorio Benitez</th>
+                                            <th class="center">
+
+                                                <a class="btn btn-primary abrir-modal" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editEstudiante">
+                                                    <i class="lni lni-pencil-alt"></i>
+                                                </a>
+                                            
+                                                <!--Modal-->
+                                                <div class="modal fade text-muted" id="editEstudiante" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar Información del Estudiante</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        
+                                                        <div class="boton_editar modal-body">
+                                                            
+                                                            
+                                                            <div class="py-4 bg-white text-muted">
+                                <div class="py-3">
+                                                       
+                                <label for="apellido" class="form-label text-secondary"><strong>Apellidos</strong></label>
+     
+                                <input class="form-control" type="text" id="apellido" autofocus>
+                                </div>
+                    
+                                <div class="py-3">
+                                  <label for="nombre" class="form-label text-secondary"><strong>Nombre</strong></label>
+
+ <input class="form-control" type="text" id="nombre" autofocus>
+                                </div>
+                    
+                    
+<div class="py-3">
+    <label for="ci" class="form-label text-secondary"><strong>C.I</strong></label>
+    <input class="form-control" type="text" id="ci" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+
+<div class="py-3">
+    <label for="nacionalidad" class="form-label text-secondary"><strong>Nacionalidad</strong></label>
+    <input class="form-control" type="text" id="nacionalidad" autofocus>
+</div>
+
+
+<div class="py-3"><strong class="text-secondary">Sexo</strong></div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="generoh" value="option1">
+                                        <label class="form-check-label" for="generoh">Hombre</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="generom" value="option2">
+                                        <label class="form-check-label" for="generom">Mujer</label>
+                                      </div>
+                                      
+                                      
+                                      
+                                  <div class="py-3">
+                                    <label for="fecha" class="form-label text-secondary"><strong>Fecha de Nacimiento</strong></label>
+                                    <input class="form-control" type="text" id="fecha" placeholder="dd/mm/aaaa">
+                                </div> 
+                                
+                                
+                                <div class="py-3">
+                                <label for="lugarN" class="form-label text-secondary"><strong>Lugar de nacimiento</strong></label>
+     
+                                <input class="form-control" type="text" id="lugarN" autofocus>
+                                </div>
+                                <div class="py-3">
+
+                                <label for="estado" class="form-label text-secondary"><strong>Estado</strong></label>
+
+     
+                                <input class="form-control" type="text" id="estado" autofocus>
+                                </div>
+                                 
+                                 <div class="py-3">
+
+                                <label for="pais" class="form-label text-secondary"><strong>País</strong></label>
+
+     
+                                <input class="form-control" type="text" id="pais" autofocus>
+                                </div>     <div class="py-3">
+
+                                <label for="direccion" class="form-label text-secondary"><strong>Dirección actual</strong></label>
+
+     
+                                <input class="form-control" type="text" id="direccion" autofocus>
+                                </div>  
+                                
+                                 <div class="py-3">
+
+
+
+                                <label for="municipio" class="form-label text-secondary"><strong>Municipio</strong></label>
+
+     
+                                <input class="form-control" type="text" id="municipio" autofocus>
+                                </div> 
+                                
+                                <div class="py-3">
+
+    <label for="telefono" class="form-label text-secondary"><strong>Número de teléfono</strong></label>
+
+    <input class="form-control" type="text" id="telefono" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+                                      
+                                      
+                                    </div>
+                    
+                    
+                                <div class="py-3">
+                                    <label for="representante" class="form-label text-secondary"><strong>Con quién vive</strong></label>
+                                            <select class="form-select" id="representante" rows="3" placeholder="Nombre del Videojuego">
+                                               <option>Ambos padres</option>
+                                               <option>Madre</option>
+                                               <option>Padre</option>
+                                               <option>Otros parientes</option>
+
+                            </select>
+                                </div>
+<br>
+                        <form>
+                                <h2 class="text-muted">Datos del Representante</h2>
+                        
+                    
+                    
+                    <div class="py-4 bg-white text-muted">
+
+                                <div class="py-3">
+
+                                                       
+                                <label for="apellidoR" class="form-label text-secondary"><strong>Apellidos</strong></label>
+     
+                                <input class="form-control" type="text" id="apellidoR" autofocus>
+                                </div>
+                               
+                    
+                            </div>
+                            
+                            <div class="py-3">
+
+                                <label for="nombreR" class="form-label text-secondary"><strong>Nombre</strong></label>
+     
+                                <input class="form-control" type="text" id="nombreR" autofocus>
+                                </div>
+                                
+                              <div class="py-3">
+
+
+
+                                <label for="parentesco" class="form-label text-secondary"><strong>Parentesco</strong></label>
+     
+                                <input class="form-control" type="text" id="parentesco" autofocus>
+                                </div>  
+                                
+                                
+                                
+                                <div class="py-3">
+
+    <label for="ciR" class="form-label text-secondary"><strong>C.I</strong></label>
+
+    <input class="form-control" type="text" id="ciR" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+
+
+
+<div class="py-3"><strong class="text-secondary">Sexo</strong></div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="generohR" value="option1">
+                                        <label class="form-check-label" for="generohR">Hombre</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="generomR" value="option2">
+                                        <label class="form-check-label" for="generomR">Mujer</label>
+                                      </div>
+                                      
+                                      <div class="py-3">
+
+
+                                <label for="direccionR" class="form-label text-secondary"><strong>Dirección de habitación</strong></label>
+     
+                                <input class="form-control" type="text" id="direccionR" autofocus>
+                                </div>  
+                               <div class="py-3">
+
+
+
+    <label for="telefonoR" class="form-label text-secondary"><strong>Número de teléfono</strong></label>
+
+    <input class="form-control" type="text" id="telefonoR" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+                    <div class="py-3">
+                                <label for="profesión" class="form-label text-secondary"><strong>Profesión</strong></label>
+     
+                                <input class="form-control" type="text" id="profesión" autofocus>
+                                </div>
+                                
+                                <div class="py-3"><strong class="text-secondary">¿Trabaja?</strong></div>
+
+
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="workS" value="option1">
+                                        <label class="form-check-label" for="workS">Si</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="workN" value="option2">
+                                        <label class="form-check-label" for="workN">No</label>
+                                      </div>
+                                      
+                                      <div class="py-3">
+
+
+
+
+                                <label for="oficio" class="form-label text-secondary"><strong>Oficio</strong></label>
+     
+                                <input class="form-control" type="text" id="oficio" autofocus>
+                                </div>  
+                                
+                                 
+                                
+                                <div class="py-3">
+
+
+
+                                <label for="lugarW" class="form-label text-secondary"><strong>Lugar de trabajo</strong></label>
+     
+                                <input class="form-control" type="text" id="lugarW" autofocus>
+                                </div> 
+                                
+                                <div class="py-3">
+
+
+
+                                <label for="direccionW" class="form-label text-secondary"><strong>Dirección</strong></label>
+     
+                                <input class="form-control" type="text" id="direccionW" autofocus>
+                                </div> 
+                                <br>
+
+                        <form>
+
+                                <h2 class="text-muted">Usuario</h2>
+                                
+                                <div class="py-4 bg-white text-muted">
+
+                                <div class="py-3">
+                                <label for="usuario" class="form-label text-secondary"><strong>Nombre de Usuario</strong></label>
+     
+                                <input class="form-control" type="text" id="usuario" autofocus>
+                                </div>
+                    
+                               <div class="py-3">
+    <label for="contrasena" class="form-label text-secondary"><strong>Contraseña</strong></label>
+    <input class="form-control" type="password" id="contrasena" placeholder="" autofocus>
+</div>
+
+<div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Estoy Seguro/a</label>
+  </div>
+
+                            </div>
+
+
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                        <button type="button" class="btn btn-primary">Guardar</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+
+                                                
+    
+                                                    <button type="button" class="btn btn-danger" title="Borrar Sección" data-bs-toggle="modal" data-bs-target="#elimEstudiante">
+                                                        <i class="lni lni-eraser"></i>
+                                                    </button>
+    
+                                                    <!-- Modal -->
+                                                    <div class="modal fade text-muted" id="elimEstudiante" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true" style="text-align: left;">
+                                                        <div class="modal-dialog">
+                                                        <div class="modal-content">
+        
+                                                            <div class="modal-header">
+                                                            <h5 class="modal-title" id="elimEstudiante">Confirmar Eliminar</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+        
+                                                            <div class="modal-body">
+                                                            <p><strong>¿Estás seguro de que desea eliminar este Estudiante?</strong></p>
+                                                            <div class="mb-3">
+                                                                <label for="password" class="form-label"><strong>Contraseña de confirmación</strong></label>
+                                                                <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                                                            </div>
+                                                            <div class="mb-3 form-check">
+                                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                                <label class="form-check-label" for="exampleCheck2"><strong>Estoy Seguro/a</strong></label>
+                                                            </div>
+                                                            </div>
+        
+                                                            <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                            <button type="button" class="btn btn-danger">Eliminar</button>
+                                                            </div>
+        
+                                                        </div>
+                                                        </div>
+                                                    </div>
+    
+                                                    <!-- Modal Final -->
+                                                    
+                                                    
+                                                
+                                                
+                                            </th>
+                                        </tr>
+                        
+                                        <tr>
+                                            <th class="center">6</th>
+                                            <th class="center">Cintia Gonzalez</th>
+                                            <th class="center">32636831</th>
+                                            <th class="center">2</th>
+                                            <th class="center">B</th>
+                                            <th class="center">Alicia Gonzalez</th>
+                                            <th class="center">
+
+                                                <a class="btn btn-primary abrir-modal" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editEstudiante">
+                                                    <i class="lni lni-pencil-alt"></i>
+                                                </a>
+                                            
+                                                <!--Modal-->
+                                                <div class="modal fade text-muted" id="editEstudiante" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar Información del Estudiante</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        
+                                                        <div class="boton_editar modal-body">
+                                                            
+                                                            
+                                                            <div class="py-4 bg-white text-muted">
+                                <div class="py-3">
+                                                       
+                                <label for="apellido" class="form-label text-secondary"><strong>Apellidos</strong></label>
+     
+                                <input class="form-control" type="text" id="apellido" autofocus>
+                                </div>
+                    
+                                <div class="py-3">
+                                  <label for="nombre" class="form-label text-secondary"><strong>Nombre</strong></label>
+
+ <input class="form-control" type="text" id="nombre" autofocus>
+                                </div>
+                    
+                    
+<div class="py-3">
+    <label for="ci" class="form-label text-secondary"><strong>C.I</strong></label>
+    <input class="form-control" type="text" id="ci" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+
+<div class="py-3">
+    <label for="nacionalidad" class="form-label text-secondary"><strong>Nacionalidad</strong></label>
+    <input class="form-control" type="text" id="nacionalidad" autofocus>
+</div>
+
+
+<div class="py-3"><strong class="text-secondary">Sexo</strong></div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="generoh" value="option1">
+                                        <label class="form-check-label" for="generoh">Hombre</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="generom" value="option2">
+                                        <label class="form-check-label" for="generom">Mujer</label>
+                                      </div>
+                                      
+                                      
+                                      
+                                  <div class="py-3">
+                                    <label for="fecha" class="form-label text-secondary"><strong>Fecha de Nacimiento</strong></label>
+                                    <input class="form-control" type="text" id="fecha" placeholder="dd/mm/aaaa">
+                                </div> 
+                                
+                                
+                                <div class="py-3">
+                                <label for="lugarN" class="form-label text-secondary"><strong>Lugar de nacimiento</strong></label>
+     
+                                <input class="form-control" type="text" id="lugarN" autofocus>
+                                </div>
+                                <div class="py-3">
+
+                                <label for="estado" class="form-label text-secondary"><strong>Estado</strong></label>
+
+     
+                                <input class="form-control" type="text" id="estado" autofocus>
+                                </div>
+                                 
+                                 <div class="py-3">
+
+                                <label for="pais" class="form-label text-secondary"><strong>País</strong></label>
+
+     
+                                <input class="form-control" type="text" id="pais" autofocus>
+                                </div>     <div class="py-3">
+
+                                <label for="direccion" class="form-label text-secondary"><strong>Dirección actual</strong></label>
+
+     
+                                <input class="form-control" type="text" id="direccion" autofocus>
+                                </div>  
+                                
+                                 <div class="py-3">
+
+
+
+                                <label for="municipio" class="form-label text-secondary"><strong>Municipio</strong></label>
+
+     
+                                <input class="form-control" type="text" id="municipio" autofocus>
+                                </div> 
+                                
+                                <div class="py-3">
+
+    <label for="telefono" class="form-label text-secondary"><strong>Número de teléfono</strong></label>
+
+    <input class="form-control" type="text" id="telefono" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+                                      
+                                      
+                                    </div>
+                    
+                    
+                                <div class="py-3">
+                                    <label for="representante" class="form-label text-secondary"><strong>Con quién vive</strong></label>
+                                            <select class="form-select" id="representante" rows="3" placeholder="Nombre del Videojuego">
+                                               <option>Ambos padres</option>
+                                               <option>Madre</option>
+                                               <option>Padre</option>
+                                               <option>Otros parientes</option>
+
+                            </select>
+                                </div>
+<br>
+                        <form>
+                                <h2 class="text-muted">Datos del Representante</h2>
+                        
+                    
+                    
+                    <div class="py-4 bg-white text-muted">
+
+                                <div class="py-3">
+
+                                                       
+                                <label for="apellidoR" class="form-label text-secondary"><strong>Apellidos</strong></label>
+     
+                                <input class="form-control" type="text" id="apellidoR" autofocus>
+                                </div>
+                               
+                    
+                            </div>
+                            
+                            <div class="py-3">
+
+                                <label for="nombreR" class="form-label text-secondary"><strong>Nombre</strong></label>
+     
+                                <input class="form-control" type="text" id="nombreR" autofocus>
+                                </div>
+                                
+                              <div class="py-3">
+
+
+
+                                <label for="parentesco" class="form-label text-secondary"><strong>Parentesco</strong></label>
+     
+                                <input class="form-control" type="text" id="parentesco" autofocus>
+                                </div>  
+                                
+                                
+                                
+                                <div class="py-3">
+
+    <label for="ciR" class="form-label text-secondary"><strong>C.I</strong></label>
+
+    <input class="form-control" type="text" id="ciR" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+
+
+
+<div class="py-3"><strong class="text-secondary">Sexo</strong></div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="generohR" value="option1">
+                                        <label class="form-check-label" for="generohR">Hombre</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="generomR" value="option2">
+                                        <label class="form-check-label" for="generomR">Mujer</label>
+                                      </div>
+                                      
+                                      <div class="py-3">
+
+
+                                <label for="direccionR" class="form-label text-secondary"><strong>Dirección de habitación</strong></label>
+     
+                                <input class="form-control" type="text" id="direccionR" autofocus>
+                                </div>  
+                               <div class="py-3">
+
+
+
+    <label for="telefonoR" class="form-label text-secondary"><strong>Número de teléfono</strong></label>
+
+    <input class="form-control" type="text" id="telefonoR" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+</div>
+                    <div class="py-3">
+                                <label for="profesión" class="form-label text-secondary"><strong>Profesión</strong></label>
+     
+                                <input class="form-control" type="text" id="profesión" autofocus>
+                                </div>
+                                
+                                <div class="py-3"><strong class="text-secondary">¿Trabaja?</strong></div>
+
+
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="workS" value="option1">
+                                        <label class="form-check-label" for="workS">Si</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="workN" value="option2">
+                                        <label class="form-check-label" for="workN">No</label>
+                                      </div>
+                                      
+                                      <div class="py-3">
+
+
+
+
+                                <label for="oficio" class="form-label text-secondary"><strong>Oficio</strong></label>
+     
+                                <input class="form-control" type="text" id="oficio" autofocus>
+                                </div>  
+                                
+                                 
+                                
+                                <div class="py-3">
+
+
+
+                                <label for="lugarW" class="form-label text-secondary"><strong>Lugar de trabajo</strong></label>
+     
+                                <input class="form-control" type="text" id="lugarW" autofocus>
+                                </div> 
+                                
+                                <div class="py-3">
+
+
+
+                                <label for="direccionW" class="form-label text-secondary"><strong>Dirección</strong></label>
+     
+                                <input class="form-control" type="text" id="direccionW" autofocus>
+                                </div> 
+                                <br>
+
+                        <form>
+
+                                <h2 class="text-muted">Usuario</h2>
+                                
+                                <div class="py-4 bg-white text-muted">
+
+                                <div class="py-3">
+                                <label for="usuario" class="form-label text-secondary"><strong>Nombre de Usuario</strong></label>
+     
+                                <input class="form-control" type="text" id="usuario" autofocus>
+                                </div>
+                    
+                               <div class="py-3">
+    <label for="contrasena" class="form-label text-secondary"><strong>Contraseña</strong></label>
+    <input class="form-control" type="password" id="contrasena" placeholder="" autofocus>
+</div>
+
+<div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Estoy Seguro/a</label>
+  </div>
+
+                            </div>
+
+
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                        <button type="button" class="btn btn-primary">Guardar</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+
+                                                
+    
+                                                    <button type="button" class="btn btn-danger" title="Borrar Sección" data-bs-toggle="modal" data-bs-target="#elimEstudiante">
+                                                        <i class="lni lni-eraser"></i>
+                                                    </button>
+    
+                                                    <!-- Modal -->
+                                                    <div class="modal fade text-muted" id="elimEstudiante" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true" style="text-align: left;">
+                                                        <div class="modal-dialog">
+                                                        <div class="modal-content">
+        
+                                                            <div class="modal-header">
+                                                            <h5 class="modal-title" id="elimEstudiante">Confirmar Eliminar</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+        
+                                                            <div class="modal-body">
+                                                            <p><strong>¿Estás seguro de que desea eliminar este Estudiante?</strong></p>
+                                                            <div class="mb-3">
+                                                                <label for="password" class="form-label"><strong>Contraseña de confirmación</strong></label>
+                                                                <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                                                            </div>
+                                                            <div class="mb-3 form-check">
+                                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                                <label class="form-check-label" for="exampleCheck2"><strong>Estoy Seguro/a</strong></label>
+                                                            </div>
+                                                            </div>
+        
+                                                            <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                            <button type="button" class="btn btn-danger">Eliminar</button>
+                                                            </div>
+        
+                                                        </div>
+                                                        </div>
+                                                    </div>
+    
+                                                    <!-- Modal Final -->
+                                                    
+                                                    
+                                                
+                                                
+                                            </th>
+                                        </tr>
+                        
+                                    </tbody>
+                        
+                        
+                                </table>
+
+
+            
+                                <!--======Contenido======-->
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                      
+        </div>
+       </div>
+
+    
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/menu.js"></script>
+
+</body>
+</html>

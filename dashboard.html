@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="wihte">
+        <div class="container-fluid">
+            
+            <a href="#" class="navbar-brand" id="item_menu_inicio">Escuela</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a href="./index.html" class="nav-link" href="#" style="color: rgba(255, 0, 0, 0.5);">
+                    <i class="lni lni-exit"></i>
+                    <span>Cerrar Sesión</span>
+                </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+
+      <!--======Dashboard======-->
+    
+      <div class="wrapper">
+        <aside id="sidebar" class="expand">
+            <div class="d-flex">
+                <button id="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="./dashboard.html">Inicio</a>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#gestion" aria-expanded="false" aria-controls="gestion">
+                        <i class="lni lni-text-align-justify"></i>
+                        <span>Gestionar Grados</span>
+                    </a>
+                    <ul id="gestion" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        
+                        <li class="sidebar-item">
+                            <a href="./assets/crear_grado.html" class="sidebar-link" id="item_menu_grados_crear">Crear Grado</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="./assets/crear_seccion.html" class="sidebar-link" id="item_menu_seccion_crear">Crear Sección</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="./assets/gestion_grado.html" class="sidebar-link" id="item_menu_grados_gestionar">Gestionar</a>
+                        </li>
+                        
+                        <li class="sidebar-item">
+                            <a href="./assets/asignar_docente.html" class="sidebar-link" id="item_menu_asignar_docente">Asignar Docente</a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="./assets/asignar_estudiante.html" class="sidebar-link" id="item_menu_asignar_estudiante">Asignar Estudiante</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#professors" aria-expanded="false" aria-controls="professors">
+                        <i class="lni lni-users"></i>
+                        <span>Docentes</span>
+                    </a>
+                    <ul id="professors" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="./assets/crear_profesor.html" class="sidebar-link" id="item_menu_prof_crear">Crear</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="./assets/gestionar_profesor.html" class="sidebar-link" id="item_menu_prof_gestionar">Gestionar</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#students" aria-expanded="false" aria-controls="students">
+                        <i class="lni lni-pencil"></i>
+                        <span>Estudiantes</span>
+                    </a>
+                    <ul id="students" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="./assets/crear_estudiante.html" class="sidebar-link" id="item_menu_estudiante_crear">Crear</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="./assets/gestionar_estudiantes.html" class="sidebar-link" id="item_menu_estudiante_gestionar">Gestionar</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#results" aria-expanded="false" aria-controls="results">
+                        <i class="lni lni-add-files"></i>
+                        <span>Resultados</span>
+                    </a>
+                    <ul id="results" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="./assets/nuevo_resultados.html" class="sidebar-link" id="item_menu_results_nuevo">Nuevo</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="./assets/gestionar_resultados.html" class="sidebar-link" id="item_menu_results_gestionar">Gestionar</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="./assets/usuario_admin.html" class="sidebar-link" id="item_menu_users_admin">
+                        <i class="lni lni-user"></i>
+                        <span>Administrador</span>
+                    </a>
+                </li>
+
+            </ul>
+        </aside>
+    
+        <div class="main p-3">
+          <div class="container my-8">
+            <main id="container_contenido">
+                <!--==========Contenido===========-->
+
+                <div class="card border-0 container-fluid" style="background-color: white;">
+                    <div class="mt-4 mb-4">
+                        <h2 class="title">Panel de Control</h2>
+                    </div>
+                </div>
+
+                
+                
+                <div class="container my-3">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 py-1">
+                            <a class="dashboard-stat bg-white" href="./assets/gestionar_estudiantes.html" id="item_menu_estudiante_gestionar2">
+                                <div class="card border-0 text-center">
+                                    <div class="card-body">
+                                        <h1 class="card-title">5</h1>
+                                        <p class="card-text text-muted">Estudiantes Listados</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 py-1">
+                            <a class="dashboard-stat bg-white" href="./assets/gestionar_profesor.html" id="item_menu_prof_gestionar2">
+                                <div class="card border-0 text-center">
+                                    <div class="card-body">
+                                        <h1 class="card-title">3</h1>
+                                        <p class="card-text text-muted">Docentes Listados</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 py-1">
+                            <a class="dashboard-stat bg-white" href="./assets/gestion_grado.html" id="item_menu_grados_gestionar2">
+                                <div class="card border-0 text-center">
+                                    <div class="card-body">
+                                        <h1 class="card-title">6</h1>
+                                        <p class="card-text text-muted">Total de Grados Listados</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 py-1">
+                            <a class="dashboard-stat bg-white" href="./assets/gestionar_resultados.html" id="item_menu_results_gestionar2">
+                                <div class="card border-0 text-center">
+                                    <div class="card-body">
+                                        <h1 class="card-title">4</h1>
+                                        <p class="card-text text-muted">Resultados Publicados</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        
+            
+
+                    
+                    <section class="section py-4">
+                        <div class="card border-0 container-fluid" style="background-color: white;">
+                            <div class="">
+                                <div class="">
+                                    <div class="text-muted ">
+                                        <div class="card-body">
+                                            <div class="">
+                                                <h5>Resultados Publicados Recientemente</h5>
+                                            </div>
+                                            <div class="mt-4 mb-1 panel-body p-20">
+                                                <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Nombre Estudiante</th>
+                                                            <th>Cédula</th>
+                                                            <th>Grado</th>
+                                                            <th>Sección</th>
+                                                            <th>Fecha de Registro</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        
+                                                        <tr>
+                                                            <td>Juan Lopez</td>
+                                                            <td>20583819</td>
+                                                            <td>1</td>
+                                                            <td>A</td>
+                                                            <td>2023-09-04</td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td>Andrea González</td>
+                                                            <td>30683919</td>
+                                                            <td>1</td>
+                                                            <td>C</td>
+                                                            <td>2023-09-04</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Pedro Hernández</td>
+                                                            <td>32789102</td>
+                                                            <td>3</td>
+                                                            <td>B</td>
+                                                            <td>2023-10-19</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Luis Rodríguez</td>
+                                                            <td>17381929</td>
+                                                            <td>2</td>
+                                                            <td>D</td>
+                                                            <td>2023-10-20</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+           
+
+                <!--==========Contenido===========-->
+            </main>
+          </div>
+        </div>
+
+
+    <!--===============-->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/menu2.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    
+</body>
+</html>

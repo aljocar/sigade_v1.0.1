@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar Resultado</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+    <div class="main p-3">
+        <div class="container my-3">
+            <div class="row">
+
+            <!--======Titulo======-->
+
+            <div class="card border-0 container-fluid" style="background-color: white;">
+                <div class="mt-4 mb-4">
+                    <!--======Contenido======-->
+            
+                    <h2 class="title text-muted">Gestionar Resultados</h2>
+            
+                    <!--======Contenido======-->
+                </div>
+            </div>
+
+            <!--======Titulo======-->
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 py-4">
+
+            <div class="card border-0 container-fluid" style="background-color: white;">
+                <div class="text-muted ">
+                    <div class="card-body">
+                        <div class="">
+                             <h5>Informes Enviados</h5> <!--Titulo-->
+                        </div>
+                        <div class="mt-4 mb-1 panel-body p-20">
+        
+                            <!--======Contenido======-->
+        
+                            <div class="container mt-3">
+                        
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre de Estudiante</th>
+                                            <th>Cédula</th>
+                                            <th>Grado</th>
+                                            <th>Sección</th>
+                                            <th>Fecha de Registro</th>
+                                            <th>Acción</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Juan Lopez</td>
+                                            <td>20583819</td>
+                                            <td>1</td>
+                                            <th class="fw-normal">A</th>
+                                            <td>2023-09-04</td>
+                                            <td>
+                                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#elimResult" title="Borrar Informe">
+                                                    <i class="lni lni-eraser"></i>
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade text-muted" id="elimResult" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+    
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="elimResult">Confirmar Eliminar</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+    
+                                                        <div class="modal-body">
+                                                        <p><strong>¿Estás seguro de que desea eliminar este Resultado?</strong></p>
+                                                        <div class="mb-3">
+                                                            <label for="password" class="form-label"><strong>Contraseña de confirmación</strong></label>
+                                                            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                                                        </div>
+                                                        <div class="mb-3 form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                            <label class="form-check-label" for="exampleCheck2"><strong>Estoy Seguro/a</strong></label>
+                                                        </div>
+                                                        </div>
+    
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                                        </div>
+    
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Modal Final -->
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Andrea González</td>
+                                            <td>30683919</td>
+                                            <td>1</td>
+                                            <td>C</td>
+                                            <td>2023-09-04</td>
+                                            <td>
+                                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#elimResult" title="Borrar Informe">
+                                                    <i class="lni lni-eraser"></i>
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade text-muted" id="elimResult" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+    
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="elimResult">Confirmar Eliminar</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+    
+                                                        <div class="modal-body">
+                                                        <p><strong>¿Estás seguro de que desea eliminar este Resultado?</strong></p>
+                                                        <div class="mb-3">
+                                                            <label for="password" class="form-label"><strong>Contraseña de confirmación</strong></label>
+                                                            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                                                        </div>
+                                                        <div class="mb-3 form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                            <label class="form-check-label" for="exampleCheck2"><strong>Estoy Seguro/a</strong></label>
+                                                        </div>
+                                                        </div>
+    
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                                        </div>
+    
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Modal Final -->
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pedro Hernández</td>
+                                            <td>32789102</td>
+                                            <td>3</td>
+                                            <td>B</td>
+                                            <td>2023-10-19</td>
+                                            <td>
+                                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#elimResult" title="Borrar Informe">
+                                                    <i class="lni lni-eraser"></i>
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade text-muted" id="elimResult" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+    
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="elimResult">Confirmar Eliminar</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+    
+                                                        <div class="modal-body">
+                                                        <p><strong>¿Estás seguro de que desea eliminar este Resultado?</strong></p>
+                                                        <div class="mb-3">
+                                                            <label for="password" class="form-label"><strong>Contraseña de confirmación</strong></label>
+                                                            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                                                        </div>
+                                                        <div class="mb-3 form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                            <label class="form-check-label" for="exampleCheck2"><strong>Estoy Seguro/a</strong></label>
+                                                        </div>
+                                                        </div>
+    
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                                        </div>
+    
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Modal Final -->
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Luis Rodríguez</td>
+                                            <td>17381929</td>
+                                            <td>2</td>
+                                            <td>D</td>
+                                            <td>2023-10-20</td>
+                                            <td>
+                                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#elimResult" title="Borrar Informe">
+                                                    <i class="lni lni-eraser"></i>
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade text-muted" id="elimResult" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+    
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="elimResult">Confirmar Eliminar</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+    
+                                                        <div class="modal-body">
+                                                        <p><strong>¿Estás seguro de que desea eliminar este Resultado?</strong></p>
+                                                        <div class="mb-3">
+                                                            <label for="password" class="form-label"><strong>Contraseña de confirmación</strong></label>
+                                                            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                                                        </div>
+                                                        <div class="mb-3 form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                            <label class="form-check-label" for="exampleCheck2"><strong>Estoy Seguro/a</strong></label>
+                                                        </div>
+                                                        </div>
+    
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                                        </div>
+    
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Modal Final -->
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+                                
+
+        
+                            <!--======Contenido======-->
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <!--===============-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Resultado</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+    <div class="main p-3">
+        <div class="container my-3">
+            <div class="row">
+
+            <!--======Titulo======-->
+
+            <div class="card border-0 container-fluid text-muted" style="background-color: white;">
+                <div class="mt-4 mb-4">
+                    <!--======Contenido======-->
+            
+                    <h2 class="title">Nuevo Resultado</h2>
+            
+                    <!--======Contenido======-->
+                </div>
+            </div>
+
+            <!--======Titulo======-->
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 py-4">
+
+            <div class="card border-0 container-fluid" style="background-color: white;">
+                <div class="text-muted ">
+                    <div class="card-body">
+                        <div class="">
+                             <h5>Subir Resultado</h5> <!--Titulo-->
+                        </div>
+                        <div class="mt-4 mb-1 panel-body p-20">
+        
+                            <!--======Contenido======-->
+        
+                            <div class="container my-4 ">
+                                
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="grado" class="form-label">Grado</label>
+                                        <select class="form-select" id="grado">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="seccion" class="form-label">Sección</label>
+                                        <select class="form-select" id="seccion">
+                                            <option value="1">A</option>
+                                            <option value="2">B</option>
+                                            <option value="3">C</option>
+                                            <option value="4">D</option>
+                                        </select>
+                                    </div>
+                        
+                                    <div class="col-md-6">
+                                        <label for="estudiante" class="form-label">Seleccione Estudiante</label>
+                                        <select class="form-select" id="estudiante">
+                                            <option value="1">Juan Lopez</option>
+                                            <option value="2">Andrea González</option>
+                                            <option value="3">Pedro Hernández</option>
+                                            <option value="4">Luis Rodríguez</option>
+                                        </select>
+                                    </div>
+                        
+                                    <div class="">
+                                        <label for="materia" class="form-label">Archivo</label>
+                                        <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 mb-3">
+                                            <input class="form-control" type="file" id="formFile">
+                                          </div>
+                                    </div>
+                                  
+                                    <div class="col-md-6">
+                                        <label for="literal" class="form-label">Seleccione el Literal de Aprobación</label>
+                                        <select class="form-select" id="literal">
+                                            <option value="1">A</option>
+                                            <option value="2">B</option>
+                                            <option value="3">C</option>
+                                            <option value="4">D</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label>Fecha</label>
+                                        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 mb-3">
+                                            <input type="date" class="form-control" id="fecha" name="fecha">
+                                        </div>
+                                    </div>
+                        
+                                    <div class="col-8">
+                                        <button type="button" class="btn btn-primary">Enviar Informe</button>
+                                    </div>
+                                </form>
+                        
+                                <div id="resultados" class="mt-3">
+                                </div>
+                            </div>
+        
+                            <!--======Contenido======-->
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <!--===============-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/menu.js"></script>
+
+</body>
+</html>

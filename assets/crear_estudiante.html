@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Estudiante</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+</head>
+<body>
+    
+
+    
+    
+    <div class="main p-3">
+        <div class="container my-8">
+            <main id="container_contenido">
+                <!--==========Contenido===========-->
+
+                <div class="card border-0 container-fluid" style="background-color: white;">
+                    <div class="mt-4 mb-4">
+                        <div class="page-title-div">
+                            <div class="col-sxs-6">
+                                <h2 class="title text-muted">Crear Estudiante</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                <div class="container my-3">
+                    <div class="card col-12 p-4 bg-white border-0">
+                        <h2 class="text-muted">Nuevo Estudiante</h2>
+                        <form>
+
+                            <!--===De Aqui===-->
+
+                            <div class="py-4 bg-white text-muted">
+                                <div class="py-3">                     
+                                    <label for="apellido" class="form-label text-secondary"><strong>Apellidos</strong></label>
+                                    <input class="form-control" type="text" id="apellido" autofocus>
+                                </div>
+                    
+                                <div class="py-3">
+                                    <label for="nombre" class="form-label text-secondary"><strong>Nombre</strong></label>
+                                    <input class="form-control" type="text" id="nombre" autofocus>
+                                </div>
+                    
+                    
+                                <div class="py-3">
+                                    <label for="ci" class="form-label text-secondary"><strong>C.I</strong></label>
+                                    <input class="form-control" type="text" id="ci" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+                                </div>
+
+                                <div class="py-3">
+                                    <label for="nacionalidad" class="form-label text-secondary"><strong>Nacionalidad</strong></label>
+                                    <input class="form-control" type="text" id="nacionalidad" autofocus>
+                                </div>
+
+
+                                <div class="py-3"><strong class="text-secondary">Sexo</strong></div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="generoh" value="option1">
+                                        <label class="form-check-label" for="generoh">Hombre</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="generom" value="option2">
+                                        <label class="form-check-label" for="generom">Mujer</label>
+                                      </div>
+                                </div>   
+                                      
+                                      
+                                <div class="py-3">
+                                    <label for="fecha" class="form-label text-secondary"><strong>Fecha de Nacimiento</strong></label>
+                                    <input class="form-control" type="text" id="fecha" placeholder="dd/mm/aaaa">
+                                </div> 
+                                
+                                
+                                <div class="py-3">
+                                    <label for="lugarN" class="form-label text-secondary"><strong>Lugar de nacimiento</strong></label>
+                                    <input class="form-control" type="text" id="lugarN" autofocus>
+                                </div>
+
+                                <div class="py-3">
+                                    <label for="pais" class="form-label text-secondary"><strong>País</strong></label>
+                                    <input class="form-control" type="text" id="pais" autofocus>
+                                </div>  
+
+                                <div class="py-3">
+                                    <label for="estado" class="form-label text-secondary"><strong>Estado</strong></label>
+                                    <input class="form-control" type="text" id="estado" autofocus>
+                                </div>
+                                 
+                                <div class="py-3">
+                                    <label for="municipio" class="form-label text-secondary"><strong>Municipio</strong></label>
+                                    <input class="form-control" type="text" id="municipio" autofocus>
+                                </div> 
+
+                                <div class="py-3">
+                                    <label for="parroquia" class="form-label text-secondary"><strong>Parroquia</strong></label>
+                                    <input class="form-control" type="text" id="parroquia" autofocus>
+                                </div>
+                                
+                                <div class="py-3">
+                                    <label for="direccion" class="form-label text-secondary"><strong>Dirección actual</strong></label>
+                                    <input class="form-control" type="text" id="direccion" autofocus>
+                                </div>  
+                                
+                                
+                                
+                                <div class="py-3">
+                                    <label for="telefono" class="form-label text-secondary"><strong>Número de teléfono</strong></label>
+                                    <input class="form-control" type="text" id="telefono" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+                                </div>
+
+                    
+                    
+                                <div class="py-3">
+                                    <label for="representante" class="form-label text-secondary"><strong>Con quién vive</strong></label>
+                                    <select class="form-select" id="representante" rows="3">
+                                        <option>Ambos padres</option>
+                                        <option>Madre</option>
+                                        <option>Padre</option>
+                                        <option>Otros parientes</option>
+                                    </select>
+                                </div>
+
+                                <div class="py-3">
+                                    <label for="peso" class="form-label text-secondary"><strong>Peso</strong></label>
+                                    <input class="form-control" type="text" id="peso">
+                                </div>
+
+                                <div class="py-3">
+                                    <label for="talla_camisa" class="form-label text-secondary"><strong>Talla de Camisa</strong></label>
+                                    <input class="form-control" type="text" id="talla_camisa">
+                                </div>
+
+                                <div class="py-3">
+                                    <label for="talla_pantalon" class="form-label text-secondary"><strong>Talla de Pantalón</strong></label>
+                                    <input class="form-control" type="text" id="talla_pantalon">
+                                </div>
+
+                                <div class="py-3">
+                                    <label for="talla_zapato" class="form-label text-secondary"><strong>Talla de Zapato</strong></label>
+                                    <input class="form-control" type="text" id="talla_zapato">
+                                </div>
+
+                                <br>
+
+
+                                
+                                <form>
+                                    <h2 class="text-muted">Datos del Representante</h2>
+                                        <div class="py-4 bg-white text-muted">
+                                            <div class="py-3">
+                                                <label for="apellidoR" class="form-label text-secondary"><strong>Apellidos</strong></label>
+                                                <input class="form-control" type="text" id="apellidoR" autofocus>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="py-3">
+                                            <label for="nombreR" class="form-label text-secondary"><strong>Nombre</strong></label>
+                                            <input class="form-control" type="text" id="nombreR" autofocus>
+                                        </div>
+                                
+                                        <div class="py-3">
+                                            <label for="parentesco" class="form-label text-secondary"><strong>Parentesco</strong></label>
+                                            <input class="form-control" type="text" id="parentesco" autofocus>
+                                        </div>  
+                                
+                                        <div class="py-3">
+                                            <label for="ciR" class="form-label text-secondary"><strong>C.I</strong></label>
+                                            <input class="form-control" type="text" id="ciR" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+                                        </div>
+
+
+
+                                        <div class="py-3"><strong class="text-secondary">Sexo</strong></div>
+
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="generohR" value="option1">
+                                                <label class="form-check-label" for="generohR">Hombre</label>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="generomR" value="option2">
+                                                <label class="form-check-label" for="generomR">Mujer</label>
+                                            </div>
+                                           
+                                      
+                                        <div class="py-3">
+                                            <label for="direccionR" class="form-label text-secondary"><strong>Dirección de habitación</strong></label>
+                                            <input class="form-control" type="text" id="direccionR" autofocus>
+                                        </div>  
+                               
+                                        <div class="py-3">
+                                            <label for="telefonoR" class="form-label text-secondary"><strong>Número de teléfono</strong></label>
+                                            <input class="form-control" type="text" id="telefonoR" pattern="[0-9]*" title="Por favor ingresa solo números" inputmode="numeric">
+                                        </div>
+                                        
+                                        <div class="py-3">
+                                            <label for="profesión" class="form-label text-secondary"><strong>Profesión</strong></label>
+                                            <input class="form-control" type="text" id="profesión" autofocus>
+                                        </div>
+                                
+                                        <div class="py-3"><strong class="text-secondary">¿Trabaja?</strong></div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input py-1" type="radio" name="inlineRadioOptions" id="workS" value="option1">
+                                                <label class="form-check-label" for="workS">Si</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="workN" value="option2">
+                                                <label class="form-check-label" for="workN">No</label>
+                                            </div>
+
+
+                                    
+                                      
+                                        <div class="py-3">
+                                            <label for="oficio" class="form-label text-secondary"><strong>Oficio</strong></label>
+                                            <input class="form-control" type="text" id="oficio" autofocus>
+                                        </div>  
+
+                                        <div class="py-3">    
+                                            <label for="lugarW" class="form-label text-secondary"><strong>Lugar de trabajo</strong></label>
+                                            <input class="form-control" type="text" id="lugarW" autofocus>
+                                        </div> 
+                                
+                                        <div class="py-3">
+                                            <label for="direccionW" class="form-label text-secondary"><strong>Dirección</strong></label>
+                                            <input class="form-control" type="text" id="direccionW" autofocus>
+                                        </div> 
+                                        <br>
+
+
+                                <form>
+
+                                    <h2 class="text-muted">Usuario</h2>
+                                
+                                    <div class="py-4 bg-white text-muted">
+                                        <div class="py-3">
+                                            <label for="usuario" class="form-label text-secondary"><strong>Nombre de Usuario</strong></label>
+                                            <input class="form-control" type="text" id="usuario" autofocus>
+                                        </div>
+                    
+                                        <div class="py-3">
+                                            <label for="contrasena" class="form-label text-secondary"><strong>Contraseña</strong></label>
+                                            <input class="form-control" type="password" id="contrasena" placeholder="" autofocus>
+                                        </div>
+
+
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Estoy Seguro/a</label>
+                                        </div>
+
+
+                                        <div class="d-flex justify-content-end gap-2">
+                                            <button class="btn btn-primary" type="button">Crear Estudiante</button>
+                                        </div>
+                            
+                            
+                            
+
+                            <!--===Hasta Aqui===-->
+                            
+                        </form>
+                             
+
+                <!--==========Contenido===========-->
+            </main>
+                
+        </div>
+    </div>
+
+
+    <!--===============-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/menu.js"></script>
+    
+</body>
+</html>
